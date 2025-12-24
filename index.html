@@ -1,431 +1,569 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-    <!-- PERFORMANCE & PRELOAD (Core Web Vitals) -->
+    <!-- TRACKING SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/gh/casmar76/SmartClick/smart_click.js" data-origin-url="https://pixel.insulinet.site"></script>
+    
+    <!-- SEO ESSENTIALS & PERFORMANCE -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" as="image" href="images/hero.webp">
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-    <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="dns-prefetch" href="https://pixel.aurisens.site">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <!-- TRACKING -->
-    <script src="https://cdn.jsdelivr.net/gh/casmar76/SmartClick/smc_ultra.js" data-origin-url="https://pixel.aurisens.site"></script>
+    <!-- Primary SEO -->
+    <title>Leaf Lab – Gentle, Daily CBD Support for Your Body</title>
+    <meta name="description" content="Leaf Lab is a carefully formulated CBD supplement with 0% THC. Designed to support your body’s natural balance. Simple, consistent, and responsible. Shop now.">
+    <!-- Enhanced Keywords for Organic Reach -->
+    <meta name="keywords" content="Leaf Lab, CBD Supplement, 0% THC, Hemp Derived, Wellness, Daily Supplement, Natural Balance, No Additives, Froplay Leaf Lab">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="Froplay Official">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://placehold.co/32x32/10b981/white?text=L">
 
-    <!-- ADVANCED SEO METAS -->
-    <title>Froplay™ Offiziell | Deutschlands #1 Interaktives Lern- & Erlebnis-Spielzeug</title>
-    <meta name="description" content="Der Froplay Wuffi-Freund: Das pädagogisch wertvolle Lernspielzeug ohne Bildschirm. Fördert Sprache, Empathie & Kreativität. 30 Tage testen. Jetzt 50% Rabatt!">
-    <meta name="keywords" content="Froplay, Wuffi-Freund, interaktives Spielzeug, Lernspielzeug ab 2 Jahren, Sprachförderung, Montessori Spielzeug, Kindergeschenk, ohne Bildschirm, Deutschland">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="author" content="Froplay Deutschland">
-    <meta name="publisher" content="Froplay GmbH">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="format-detection" content="telephone=no">
-    
-    <!-- CANONICAL & HREFLANG -->
-    <link rel="canonical" href="https://froplay.shop/">
-    <link rel="alternate" hreflang="de-DE" href="https://froplay.shop/">
-    <link rel="alternate" hreflang="x-default" href="https://froplay.shop/">
-    
-    <!-- OPEN GRAPH (Social Media Optimization) -->
+    <!-- Canonical & Hreflang -->
+    <link rel="canonical" href="https://leaflab.froplay.shop/">
+    <link rel="alternate" hreflang="en" href="https://leaflab.froplay.shop/">
+    <link rel="alternate" hreflang="x-default" href="https://leaflab.froplay.shop/">
+
+    <!-- Open Graph / Facebook (Optimized for Social Sharing) -->
     <meta property="og:type" content="product">
-    <meta property="og:site_name" content="Froplay Deutschland">
-    <meta property="og:url" content="https://froplay.shop/">
-    <meta property="og:title" content="Froplay™ Wuffi-Freund | Interaktives Lernen ohne Bildschirm">
-    <meta property="og:description" content="Deutschlands beliebtester Welpenfreund. Fördert spielerisch die Entwicklung Ihres Kindes. 30-Tage-Geld-zurück-Garantie.">
-    <meta property="og:image" content="images/hero.webp">
-    <meta property="og:image:secure_url" content="images/hero.webp">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Froplay Wuffi-Freund - Glückliches Kind beim Spielen">
-    <meta property="og:locale" content="de_DE">
+    <meta property="og:url" content="https://leaflab.froplay.shop/">
+    <meta property="og:title" content="Leaf Lab – Gentle, Daily Support for Your Body">
+    <meta property="og:description" content="0% THC. Tested ingredients. Leaf Lab is a formulated CBD supplement designed for your daily routine.">
+    <meta property="og:image" content="images/leaf-lab.png">
+    <meta property="og:image:alt" content="Leaf Lab CBD Supplement Bottle">
+    <meta property="og:site_name" content="Leaf Lab Official">
     <meta property="product:price:amount" content="49.99">
-    <meta property="product:price:currency" content="EUR">
-    <meta property="product:availability" content="in stock">
-    <meta property="product:brand" content="Froplay">
+    <meta property="product:price:currency" content="USD">
+    <meta property="product:availability" content="instock">
 
-    <!-- TWITTER CARDS -->
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Froplay™ Wuffi-Freund | 50% Rabatt Aktion">
-    <meta name="twitter:description" content="Der interaktive Begleiter für Kinder. Sicher, lehrreich und kuschelig. Jetzt entdecken.">
-    <meta name="twitter:image" content="images/hero.webp">
-    <meta name="twitter:image:alt" content="Froplay Spielzeug">
+    <meta name="twitter:url" content="https://leaflab.froplay.shop/">
+    <meta name="twitter:title" content="Leaf Lab – 0% THC Daily CBD Supplement">
+    <meta name="twitter:description" content="Tested ingredients. No unnecessary additives. Simple, consistent support for your body.">
+    <meta name="twitter:image" content="images/leaf-lab.png">
 
-    <!-- JSON-LD STRUCTURED DATA (Rich Results) -->
+    <!-- Preconnect & DNS-Prefetch for Performance -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://i.imgur.com">
+    <link rel="dns-prefetch" href="https://flagcdn.com">
+    
+    <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
-    [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
         {
-          "@context": "https://schema.org",
           "@type": "WebSite",
-          "name": "Froplay Deutschland",
-          "url": "https://froplay.shop/",
+          "name": "Leaf Lab Official",
+          "url": "https://leaflab.froplay.shop/",
           "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://froplay.shop/search?q={search_term_string}",
+            "target": "https://leaflab.froplay.shop/search?q={search_term_string}",
             "query-input": "required name=search_term_string"
           }
         },
         {
-          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Leaf Lab",
+          "url": "https://leaflab.froplay.shop/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "images/leaf-lab-logo.png",
+            "width": 600,
+            "height": 200
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-217-439-8884",
+            "contactType": "customer service",
+            "areaServed": ["US", "CA", "UK", "AU", "Global"],
+            "availableLanguage": "English"
+          }
+        },
+        {
           "@type": "Product",
-          "name": "Froplay Wuffi-Freund Interaktiver Welpe",
+          "name": "Leaf Lab CBD",
           "image": [
-            "images/hero.webp",
-            "https://files.catbox.moe/84csdz.png"
+            "images/leaf-lab.png"
           ],
-          "description": "Der spielerische Alltagsbegleiter, der Ihr Kind unterstützt: ohne Bildschirm, ohne Aufwand, ohne Sorgen. Entwickelt in Deutschland für Kinder ab 2 Jahren.",
-          "sku": "FRO-WUFFI-DE",
-          "mpn": "9823-DE",
-          "gtin13": "4260000000001",
+          "description": "Leaf Lab is a carefully formulated CBD supplement designed to support your body’s natural balance.",
+          "sku": "LEAFLAB-CBD-001",
           "brand": {
             "@type": "Brand",
-            "name": "Froplay",
-            "logo": "https://files.catbox.moe/84csdz.png"
+            "name": "Leaf Lab"
           },
           "aggregateRating": {
             "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "reviewCount": "7980",
+            "ratingValue": "4.9",
+            "reviewCount": "2500",
             "bestRating": "5",
             "worstRating": "1"
           },
           "offers": {
             "@type": "Offer",
-            "url": "https://froplay.shop/",
-            "priceCurrency": "EUR",
-            "price": "49.99",
+            "url": "https://leaflab.froplay.shop/",
+            "priceCurrency": "USD",
+            "price": "49.99", 
             "priceValidUntil": "2025-12-31",
-            "itemCondition": "https://schema.org/NewCondition",
-            "availability": "https://schema.org/InStock",
-            "seller": {
-              "@type": "Organization",
-              "name": "Froplay Offizieller Shop"
-            },
-            "shippingDetails": {
-              "@type": "OfferShippingDetails",
-              "shippingRate": {
-                "@type": "MonetaryAmount",
-                "value": "0",
-                "currency": "EUR"
-              },
-              "deliveryTime": {
-                "@type": "ShippingDeliveryTime",
-                "handlingTime": {
-                  "@type": "QuantitativeValue",
-                  "minValue": 0,
-                  "maxValue": 1,
-                  "unitCode": "DAY"
-                },
-                "transitTime": {
-                  "@type": "QuantitativeValue",
-                  "minValue": 1,
-                  "maxValue": 3,
-                  "unitCode": "DAY"
-                }
-              }
-            },
-            "hasMerchantReturnPolicy": {
-              "@type": "MerchantReturnPolicy",
-              "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-              "merchantReturnDays": 30,
-              "returnMethod": "https://schema.org/ReturnByMail",
-              "returnFees": "https://schema.org/FreeReturn"
-            }
+            "availability": "https://schema.org/InStock"
           }
-        },
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [{
-            "@type": "Question",
-            "name": "Ab welchem Alter ist der Wuffi-Freund geeignet?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Der Wuffi-Freund ist einfach zu bedienen und pädagogisch wertvoll für Kinder ab 2 Jahren."
-            }
-          }, {
-            "@type": "Question",
-            "name": "Ist das Material sicher für Kleinkinder?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Ja, der Wuffi-Freund besteht aus zertifizierten, schadstofffreien und weichen Materialien, die sicher für Kinder sind."
-            }
-          }, {
-            "@type": "Question",
-            "name": "Funktioniert das Spielzeug ohne App oder Handy?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Ja, absolut. Der Wuffi-Freund ist ein bildschirmfreies Spielzeug, das Kreativität und aktives Spielen fördert."
-            }
-          }]
         }
-    ]
+      ]
+    }
     </script>
 
-    <!-- STYLES (Mantido original) -->
+    <!-- STYLES & LIBRARIES -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
         }
         .hero-shadow {
             text-shadow: 0 2px 4px rgba(0,0,0,0.6);
         }
-        /* Utility to hide sections */
+        .flag-btn {
+            cursor: pointer;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+        .flag-btn:hover {
+            transform: scale(1.1);
+            opacity: 0.9;
+        }
+        .country-card {
+            transition: all 0.3s ease;
+        }
+        .country-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            border-color: #10b981;
+        }
         .hidden-section {
             display: none;
+        }
+        
+        /* Toast Notification */
+        #toast-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+        }
+        #toast-container.show {
+            transform: translateY(0);
+            opacity: 1;
         }
     </style>
 </head>
 <body class="bg-gray-50 min-h-screen flex flex-col">
 
-    <!-- LANDING PAGE CONTENT -->
-    <div id="landing-page">
+    <!-- LANDING PAGE CONTENT WRAPPED IN MAIN FOR SEO SEMANTICS -->
+    <main id="landing-page" role="main">
         
         <!-- Top Bar -->
         <div class="bg-black text-white text-[10px] md:text-xs font-bold py-2 text-center uppercase tracking-wide w-full">
-            <span>SPEZIALANGEBOT NUR FÜR KURZE ZEIT | 50 % RABATT</span>
-        </div>
-
-        <!-- Sub-header -->
-        <div class="bg-gray-100 text-xs py-2 border-b border-gray-200 w-full">
-            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-2 md:gap-6">
-                <div class="font-bold flex items-center gap-1">
-                    <img src="https://flagcdn.com/w20/de.png" alt="Deutschland Flagge" class="h-3 w-auto">
-                    <span>DEUTSCHLANDS BELOHNTESTER INTERAKTIVER WELPENFREUND FÜR KINDER</span>
-                </div>
-                <div class="flex items-center gap-3 text-[10px] md:text-xs font-semibold text-gray-700 uppercase">
-                    <span><i class="fas fa-truck text-black mr-1"></i> <span>SCHNELLER & KOSTENLOSER VERSAND</span></span>
-                    <span><i class="fas fa-shield-alt text-black mr-1"></i> <span>30-TAGE-GELD-ZURÜCK-GARANTIE</span></span>
-                </div>
-            </div>
+            <span data-i18n="top_bar">SPECIAL LIMITED TIME OFFER | 75% OFF</span>
         </div>
 
         <!-- Navbar -->
-        <nav class="bg-white px-4 py-3 sticky top-0 z-50 shadow-sm w-full">
+        <header class="bg-white px-4 py-3 sticky top-0 z-50 shadow-sm w-full">
             <div class="container mx-auto flex justify-between items-center">
-                <div class="flex items-center w-full justify-center md:justify-start">
-                    <!-- Text Logo -->
-                    <a href="#" class="text-3xl md:text-4xl font-black tracking-tighter text-blue-900 hover:opacity-80 transition-opacity decoration-0 no-underline uppercase">
-                        FROPLAY
-                    </a>
+                <div class="flex items-center">
+                    <!-- Updated Logo -->
+                    <img src="images/leaf-lab-logo.png" onerror="this.src='https://placehold.co/120x40/10b981/white?text=Leaf+Lab&font=montserrat'" alt="Leaf Lab Logo" class="h-8 md:h-10 w-auto rounded">
+                </div>
+                <div class="flex items-center gap-1.5 md:gap-2 flex-wrap justify-end max-w-[60%] md:max-w-none">
+                    <img src="https://flagcdn.com/w20/gb.png" onclick="setLanguage('en', 'gb')" class="flag-btn h-3 md:h-4 w-auto shadow-sm rounded-[1px]" alt="Switch to United Kingdom" title="United Kingdom">
+                    <img src="https://flagcdn.com/w20/pt.png" onclick="setLanguage('en', 'pt')" class="flag-btn h-3 md:h-4 w-auto shadow-sm rounded-[1px]" alt="Switch to Portugal" title="Portugal">
+                    <img src="https://flagcdn.com/w20/un.png" onclick="setLanguage('en', 'un')" class="flag-btn h-3 md:h-4 w-auto shadow-sm rounded-[1px]" alt="Switch to Global" title="Global">
                 </div>
             </div>
-        </nav>
+        </header>
 
         <!-- Hero Image Section -->
-        <div class="relative w-full h-[400px] md:h-[500px] lg:h-[600px] bg-gray-900 overflow-hidden group">
-            <img src="images/hero.webp" class="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" alt="Froplay Wuffi-Freund">
+        <section class="relative w-full h-[400px] md:h-[500px] lg:h-[600px] bg-gray-200 overflow-hidden group">
+            <!-- Updated Hero Image for CBD/Wellness -->
+            <img src="images/leaf-lab.png" onerror="this.src='https://placehold.co/1200x600?text=Leaf+Lab+CBD'" class="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" alt="Leaf Lab CBD Supplement Bottle">
             
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/30"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/10"></div>
             <div class="absolute inset-0 container mx-auto px-4 pointer-events-none">
                 <div class="relative w-full h-full">
-                    <!-- Text Removed as per previous instruction -->
+                    <div class="absolute top-6 left-0 right-0 z-10 md:top-12 md:left-4">
+                        <!-- Empty Hero Title Area -->
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Content Section -->
-        <div class="container mx-auto px-4 py-8 md:py-12 max-w-5xl">
+        <section class="container mx-auto px-4 py-6 md:py-10 max-w-5xl">
             <div class="grid md:grid-cols-1 gap-8">
-                <div>
+                <article>
                     <!-- Ratings -->
-                    <div class="flex flex-wrap items-center gap-2 mb-4 text-sm md:text-base">
-                        <div class="flex text-yellow-400">
+                    <div class="flex flex-wrap items-center gap-2 mb-3 text-sm md:text-base">
+                        <div class="flex text-yellow-400" aria-label="5 out of 5 stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <span class="font-bold text-gray-900">4.8</span>
+                        <span class="font-bold text-gray-900">5.0</span>
                         <span class="text-gray-300 mx-1">|</span>
-                        <span class="text-gray-600 italic">Mit einer exzellenten Bewertung basierend auf 7.980+ zufriedenen Familien</span>
+                        <span class="text-gray-600 italic" data-i18n="ratings">Trusted by Thousands | A Growing UK Community</span>
                     </div>
 
-                    <!-- Main Title -->
-                    <h2 class="text-2xl md:text-3xl font-black text-black leading-tight mb-4">
-                        Der spielerische Alltagsbegleiter, der Ihr Kind unterstützt: <br class="hidden md:block">
-                        <span class="text-gray-800">ohne Bildschirm, ohne Aufwand, ohne Sorgen.</span>
-                    </h2>
+                    <!-- Main Title (H1) -->
+                    <h1 class="text-2xl md:text-4xl font-black text-black leading-tight mb-4" data-i18n="main_title">
+                        Gentle, Daily Support for Your Body
+                    </h1>
 
                     <!-- Subtitle -->
-                    <p class="text-gray-600 font-medium text-[16px] md:text-lg leading-relaxed mb-8 max-w-3xl">
-                        Entwickelt in Deutschland — sicher. liebevoll. pädagogisch wertvoll.
-                    </p>
+                    <div class="text-gray-600 font-medium text-[16px] md:text-lg leading-relaxed mb-8 max-w-3xl" data-i18n="subtitle">
+                        <p class="font-bold mb-2">0% THC. Tested ingredients. No unnecessary additives.</p>
+                        Leaf Lab is a carefully formulated CBD supplement designed to support your body’s natural balance and fit seamlessly into your daily routine — simple, consistent and responsible.
+                    </div>
 
                     <!-- Features Section -->
-                    <div class="mb-8">
-                        <h3 class="text-lg font-bold text-black mb-5 uppercase tracking-wide border-l-4 border-blue-800 pl-3">
-                            WARUM FAMILIEN IN DEUTSCHLAND DEN WUFFI-FREUND WÄHLEN
-                        </h3>
-                        <ul class="space-y-4 md:grid md:grid-cols-2 md:space-y-0 md:gap-x-6 md:gap-y-4">
+                    <div class="mb-6">
+                        <h2 class="text-lg font-bold text-black mb-4 uppercase tracking-wide border-l-4 border-green-500 pl-3" data-i18n="why_love">
+                            WHY PEOPLE IN THE UK CHOOSE LEAF LAB
+                        </h2>
+                        <ul class="space-y-4 md:grid md:grid-cols-2 md:space-y-0 md:gap-x-6 md:gap-y-6">
                             <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-blue-700 text-xl mt-0.5 shrink-0"></i>
-                                <span class="text-gray-700 font-medium">Lebensechte Bewegungen – wie ein echter kleiner Welpe</span>
+                                <i class="fas fa-check-circle text-green-600 text-xl mt-1 shrink-0"></i>
+                                <div>
+                                    <span class="block text-gray-900 font-bold" data-i18n="feat_1_title">Tested ingredients with 0% THC</span>
+                                    <span class="block text-gray-600 text-sm mt-1 leading-snug" data-i18n="feat_1_desc">Formulated with hemp-derived CBD isolate and no detectable THC, ensuring a clean and controlled product.</span>
+                                </div>
                             </li>
                             <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-blue-700 text-xl mt-0.5 shrink-0"></i>
-                                <span class="text-gray-700 font-medium">Fördert Kreativität, Empathie & soziale Entwicklung</span>
+                                <i class="fas fa-check-circle text-green-600 text-xl mt-1 shrink-0"></i>
+                                <div>
+                                    <span class="block text-gray-900 font-bold" data-i18n="feat_2_title">Simple, once-daily routine</span>
+                                    <span class="block text-gray-600 text-sm mt-1 leading-snug" data-i18n="feat_2_desc">Just one capsule per day — easy to incorporate into everyday life.</span>
+                                </div>
                             </li>
                             <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-blue-700 text-xl mt-0.5 shrink-0"></i>
-                                <span class="text-gray-700 font-medium">Unterhält Kinder spielerisch – ganz ohne Bildschirmzeit</span>
+                                <i class="fas fa-check-circle text-green-600 text-xl mt-1 shrink-0"></i>
+                                <div>
+                                    <span class="block text-gray-900 font-bold" data-i18n="feat_3_title">Thoughtfully crafted, minimalist formula</span>
+                                    <span class="block text-gray-600 text-sm mt-1 leading-snug" data-i18n="feat_3_desc">Made with only essential ingredients, non-GMO, and free from unnecessary fillers.</span>
+                                </div>
                             </li>
                             <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-blue-700 text-xl mt-0.5 shrink-0"></i>
-                                <span class="text-gray-700 font-medium">Aus hochwertigen, sicheren Materialien gefertigt</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-blue-700 text-xl mt-0.5 shrink-0"></i>
-                                <span class="text-gray-700 font-medium">Weich & kuschelig – perfekt für Geborgenheit & emotionales Lernen</span>
-                            </li>
-                             <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-blue-700 text-xl mt-0.5 shrink-0"></i>
-                                <span class="text-gray-700 font-medium">Einfach zu bedienen & ideal für Kinder ab 2 Jahren</span>
+                                <i class="fas fa-check-circle text-green-600 text-xl mt-1 shrink-0"></i>
+                                <div>
+                                    <span class="block text-gray-900 font-bold" data-i18n="feat_4_title">Designed for long-term, consistent use</span>
+                                    <span class="block text-gray-600 text-sm mt-1 leading-snug" data-i18n="feat_4_desc">Ideal for those who value steady, ongoing support rather than short-term solutions.</span>
+                                </div>
                             </li>
                         </ul>
                     </div>
 
                     <!-- CTA SECTION -->
                     <div class="w-full mb-8">
-                        <!-- Direct Link -->
-                        <a href="https://www.fasttrack36.com/PHPWHDRK/2RDL145H/?uid=48760" class="block w-full bg-[#1e40af] hover:bg-[#172554] text-white font-bold text-xl md:text-2xl py-5 rounded-full shadow-md hover:shadow-lg transform transition hover:-translate-y-0.5 mb-4 text-center no-underline">
-                            Jetzt bestellen und <span class="text-yellow-300">50 % sparen</span>
+                        <a href="https://www.fasttrack37.com/PM7HK3TH/2S1LB4KQ/?uid=49860" class="block w-full bg-[#2e2e2e] hover:bg-black text-white font-black text-xl md:text-2xl py-4 rounded-lg shadow-lg hover:shadow-xl transform transition hover:-translate-y-0.5 uppercase tracking-wide mb-4 text-center">
+                            <span data-i18n="cta_button">GET 75% OFF DISCOUNT NOW!</span>
                         </a>
                         
                         <div class="flex items-center justify-center gap-3 text-gray-500 text-xs md:text-sm font-medium">
                             <div class="h-px bg-gray-300 w-full max-w-[40px] md:max-w-[80px]"></div>
-                            <span class="text-center">Teste den Froplay Wuffi-Freund völlig risikofrei dank unserer 30-Tage-Geld-zurück-Garantie.</span>
+                            <span class="text-center" data-i18n="cta_guarantee">Try it today with a 30-Day Money Back Guarantee!</span>
                             <div class="h-px bg-gray-300 w-full max-w-[40px] md:max-w-[80px]"></div>
                         </div>
                     </div>
 
                     <!-- Social Proof Box -->
-                    <div class="border border-gray-200 rounded-xl p-5 shadow-sm bg-gray-50 md:max-w-xl mb-10 mx-auto md:mx-0">
+                    <div class="border border-gray-200 rounded-xl p-4 shadow-sm bg-gray-50 md:max-w-lg mb-10">
                         <div class="flex items-center justify-center gap-3 pb-3 border-b border-gray-200 mb-3">
                             <div class="flex -space-x-3">
-                                <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=11" alt="">
-                                <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=53" alt="">
-                                <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=13" alt="">
-                                <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=68" alt="">
-                                <div class="w-8 h-8 rounded-full border-2 border-white bg-blue-100 flex items-center justify-center text-[9px] font-bold text-blue-800">
+                                <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=32" alt="Customer Avatar">
+                                <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=11" alt="Customer Avatar">
+                                <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=53" alt="Customer Avatar">
+                                <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=9" alt="Customer Avatar">
+                                <div class="w-8 h-8 rounded-full border-2 border-white bg-green-100 flex items-center justify-center text-[9px] font-bold text-green-800">
                                     <i class="fas fa-plus"></i>
                                 </div>
                             </div>
-                            <span class="text-sm font-bold text-gray-800">„Das liebevollste und sinnvollste Spielzeug, das wir seit Jahren gekauft haben.” – <span class="font-normal italic text-gray-600">Deutsche Eltern</span></span>
+                            <span class="text-sm font-bold text-gray-800" data-i18n="social_proof">Thousands of Happy Customers</span>
                         </div>
                         <div class="flex flex-col sm:flex-row items-center justify-center gap-2 text-green-700 text-sm font-bold">
                             <div class="flex items-center gap-2">
                                 <i class="fas fa-check text-green-600"></i>
-                                <span>Auf Lager</span>
+                                <span data-i18n="stock">In stock</span>
                             </div>
                             <span class="hidden sm:block text-gray-300">|</span>
                             <div class="flex items-center gap-2">
                                 <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-                                <span class="text-red-600">Angebot endet bald</span>
+                                <span class="text-red-600" data-i18n="limited_deal">Limited 75% Off Deal Ending Soon</span>
                             </div>
                         </div>
                     </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Country Selection Section (SCROLL TARGET) -->
+        <section id="country-selection" class="w-full bg-white border-t border-gray-100 py-16 md:py-24">
+            <div class="container mx-auto px-4 text-center max-w-5xl">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4 tracking-tight" data-i18n="select_title">
+                    Select Your Country to Unlock Today’s Best Leaf Lab Offer
+                </h2>
+                <p class="text-slate-500 text-base md:text-lg font-medium leading-relaxed mb-12 max-w-3xl mx-auto" data-i18n="select_subtitle">
+                    Get the lowest price available in your region, local currency, and the fastest shipping options.<br>
+                    Click on your flag to see your exclusive deal.
+                </p>
+                
+                <!-- NEW COUNTRY GRID -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 justify-center max-w-4xl mx-auto">
+                    
+                    <!-- 1. Sweden -->
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2S1LB4KQ/?uid=49860" class="group bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-green-500/30 transition-all duration-300 flex flex-col items-center gap-3 no-underline hover:-translate-y-1">
+                        <img src="https://flagcdn.com/w80/se.png" alt="Sweden Flag" class="w-12 h-auto rounded shadow-sm">
+                        <span class="font-bold text-slate-900 text-base group-hover:text-green-600">Sweden</span>
+                    </a>
+
+                    <!-- 2. Finland -->
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2S1LB4KQ/?uid=49860" class="group bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-green-500/30 transition-all duration-300 flex flex-col items-center gap-3 no-underline hover:-translate-y-1">
+                        <img src="https://flagcdn.com/w80/fi.png" alt="Finland Flag" class="w-12 h-auto rounded shadow-sm">
+                        <span class="font-bold text-slate-900 text-base group-hover:text-green-600">Finland</span>
+                    </a>
+
+                    <!-- 3. United States -->
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2S1LB4KQ/?uid=49860" class="group bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-green-500/30 transition-all duration-300 flex flex-col items-center gap-3 no-underline hover:-translate-y-1">
+                        <img src="https://flagcdn.com/w80/us.png" alt="United States Flag" class="w-12 h-auto rounded shadow-sm">
+                        <span class="font-bold text-slate-900 text-base group-hover:text-green-600">United States</span>
+                    </a>
+
+                    <!-- 4. United Kingdom -->
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2S1LB4KQ/?uid=49860" class="group bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-green-500/30 transition-all duration-300 flex flex-col items-center gap-3 no-underline hover:-translate-y-1">
+                        <img src="https://flagcdn.com/w80/gb.png" alt="United Kingdom Flag" class="w-12 h-auto rounded shadow-sm">
+                        <span class="font-bold text-slate-900 text-base group-hover:text-green-600">United Kingdom</span>
+                    </a>
+
+                    <!-- 5. Germany -->
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2S1LB4KQ/?uid=49860" class="group bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-green-500/30 transition-all duration-300 flex flex-col items-center gap-3 no-underline hover:-translate-y-1">
+                        <img src="https://flagcdn.com/w80/de.png" alt="Germany Flag" class="w-12 h-auto rounded shadow-sm">
+                        <span class="font-bold text-slate-900 text-base group-hover:text-green-600">Germany</span>
+                    </a>
+
+                    <!-- 6. Italy -->
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2S1LB4KQ/?uid=49860" class="group bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-green-500/30 transition-all duration-300 flex flex-col items-center gap-3 no-underline hover:-translate-y-1">
+                        <img src="https://flagcdn.com/w80/it.png" alt="Italy Flag" class="w-12 h-auto rounded shadow-sm">
+                        <span class="font-bold text-slate-900 text-base group-hover:text-green-600">Italy</span>
+                    </a>
+
                 </div>
             </div>
-        </div>
-
+        </section>
+        
         <!-- Footer Section -->
         <footer class="bg-gray-100 border-t border-gray-200 pt-12 pb-8">
             <div class="container mx-auto px-4 max-w-5xl">
                 
                 <div class="flex flex-col justify-center items-center gap-10 mb-10">
                     <div class="flex flex-col items-center gap-4">
-                        <!-- Footer Logo -->
-                        <span class="text-2xl font-black tracking-tight text-gray-400 uppercase opacity-80">FROPLAY</span>
+                        <img src="images/leaf-lab-logo.png" onerror="this.style.display='none'" alt="Leaf Lab Logo" class="h-8 w-auto opacity-80 grayscale rounded">
                         
-                        <p class="text-center text-gray-500 text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
-                            Der Wuffi-Freund – Interaktive Unterstützung für kindliche Entwicklung.<br>
-                            Ehrliche Materialien. Durchdachte Funktionen.<br>
-                            Entwickelt, um Kindern in Deutschland Freude, Neugier und gesundes Spielen zurückzugeben.
+                        <p class="text-center text-gray-500 text-sm md:text-base leading-relaxed max-w-2xl mx-auto" data-i18n="footer_text">
+                            Leaf Lab provides high-quality, 0% THC CBD supplements to support your daily wellness journey. Our commitment to transparency and simple, natural ingredients ensures you get the gentle support your body needs.
                         </p>
                     </div>
 
                     <!-- CUSTOMER CARE SECTION -->
                     <div class="flex flex-col items-center gap-6">
-                        <h3 class="text-xl font-black text-gray-900 uppercase tracking-wider">KUNDENSERVICE</h3>
+                        <h3 class="text-xl font-black text-gray-900 uppercase tracking-wider" data-i18n="footer_care_title">CUSTOMER CARE</h3>
                         <div class="flex flex-col gap-4 items-start sm:items-center">
-                            <a href="mailto:support@froplay.shop" class="flex items-center gap-3 text-gray-600 hover:text-black transition font-bold text-[15px] group">
+                            <a href="mailto:support@froplay.com" class="flex items-center gap-3 text-gray-600 hover:text-black transition font-bold text-[15px] group">
                                 <div class="w-8 h-8 rounded-full bg-white border border-gray-300 flex items-center justify-center group-hover:border-black transition">
                                     <i class="fas fa-envelope text-sm"></i>
                                 </div>
-                                <span>E-Mail Support</span>
+                                <span data-i18n="footer_email">Send Us An Email</span>
                             </a>
-                            <button onclick="alert('Live-Chat wird verbunden...')" class="flex items-center gap-3 text-gray-600 hover:text-black transition font-bold text-[15px] group">
+                            <button onclick="showToast('Live Chat Connecting...', 'success')" class="flex items-center gap-3 text-gray-600 hover:text-black transition font-bold text-[15px] group">
                                 <div class="w-8 h-8 rounded-full bg-white border border-gray-300 flex items-center justify-center group-hover:border-black transition">
                                     <i class="fas fa-comment-dots text-sm"></i>
                                 </div>
-                                <span>Live-Chat</span>
+                                <span data-i18n="footer_chat">24/7 Live Chat</span>
                             </button>
+                            <a href="tel:+12174398884" class="flex items-center gap-3 text-gray-600 hover:text-black transition font-bold text-[15px] group">
+                                <div class="w-8 h-8 rounded-full bg-white border border-gray-300 flex items-center justify-center group-hover:border-black transition">
+                                    <i class="fas fa-phone-alt text-sm"></i>
+                                </div>
+                                <span>+1 (217) 439-8884</span>
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="flex flex-col md:flex-row justify-between items-center gap-4 border-t border-gray-200 pt-8 text-sm text-gray-500">
-                    <p>© 2025 Froplay. Alle Rechte vorbehalten.</p>
+                    <p>© 2025 Leaf Lab. All rights reserved.</p>
                     <div class="flex items-center gap-6">
-                        <button onclick="showPolicy('privacy')" class="hover:text-gray-700 transition-colors font-medium">Datenschutz</button>
-                        <button onclick="showPolicy('terms')" class="hover:text-gray-700 transition-colors font-medium">Nutzungsbedingungen</button>
+                        <button onclick="showPolicy('privacy')" class="hover:text-gray-700 transition-colors font-medium">Privacy Policy</button>
+                        <button onclick="showPolicy('terms')" class="hover:text-gray-700 transition-colors font-medium">Terms of Service</button>
                     </div>
                 </div>
                 
                 <div class="flex flex-col items-center gap-4 mt-8 pt-8 border-t border-gray-200">
-                    <span class="text-sm text-gray-500 font-medium uppercase tracking-wide">SICHERER CHECKOUT GARANTIERT</span>
+                    <span class="text-sm text-gray-500 font-medium uppercase tracking-wide">Guaranteed Safe Checkout</span>
                     <div class="flex items-center gap-2 grayscale opacity-70">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg" alt="Mastercard" class="h-6 w-auto">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="h-6 w-auto">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="h-6 w-auto">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/American_Express_logo_%282018%29.svg" alt="Amex" class="h-6 w-auto">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/JCB_logo.svg" alt="JCB" class="h-6 w-auto">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Diners_Club_International_logo.svg" alt="Diners Club" class="h-6 w-auto">
                     </div>
                 </div>
             </div>
         </footer>
-    </div>
+    </main>
 
     <!-- LEGAL PAGE CONTAINER (Hidden by default) -->
-    <div id="legal-page" class="hidden-section w-full bg-white min-h-screen">
-        <div class="border-b border-gray-200 py-4 px-4 sticky top-0 bg-white z-50">
+    <section id="legal-page" class="hidden-section w-full bg-white min-h-screen" aria-label="Legal Information">
+        <div class="border-b border-gray-200 py-4 px-4 sticky top-0 bg-white z-50 shadow-sm">
             <div class="container mx-auto max-w-4xl flex justify-between items-center">
-                 <!-- Text Logo Replacement for Legal Page -->
-                 <span class="text-xl font-black tracking-tight text-slate-900 uppercase">FROPLAY</span>
-                <button onclick="hidePolicy()" class="flex items-center gap-2 text-sm font-bold text-blue-600 hover:text-blue-800">
-                    <i class="fas fa-arrow-left"></i> Zurück
+                <img src="images/leaf-lab-logo.png" onerror="this.src='https://placehold.co/120x40/10b981/white?text=Leaf+Lab&font=montserrat'" alt="Leaf Lab Logo" class="h-6 md:h-8 w-auto rounded">
+                <button onclick="hidePolicy()" class="flex items-center gap-2 text-sm font-bold text-blue-600 hover:text-blue-800 transition-colors">
+                    <i class="fas fa-arrow-left"></i> Back to Home
                 </button>
             </div>
         </div>
 
         <div class="container mx-auto max-w-3xl px-4 py-12">
-            <!-- Privacy Content (German Placeholder) -->
-            <div id="privacy-content" class="hidden-section space-y-6 text-gray-700 text-sm md:text-base leading-relaxed">
-                <h1 class="text-3xl font-black text-black mb-8">Datenschutz</h1>
-                <p>Hier finden Sie unsere Datenschutzbestimmungen...</p>
-            </div>
+            <!-- Privacy Content -->
+            <article id="privacy-content" class="hidden-section space-y-6 text-gray-700 text-sm md:text-base leading-relaxed">
+                <h1 class="text-3xl font-black text-black mb-8">Privacy Policy</h1>
+                <p class="text-gray-500 text-xs">Last Updated: October 2025</p>
+                <p>At Leaf Lab ("we", "our", or "us"), we are committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by Leaf Lab.</p>
+                <h3 class="text-lg font-bold text-black mt-6">1. Information We Collect</h3>
+                <p>We collect information you provide directly to us. For example, we collect information when you make a purchase, subscribe to our newsletter, or contact us. The types of information we may collect include your name, email address, postal address, credit card information, and other contact or identifying information you choose to provide.</p>
+                <h3 class="text-lg font-bold text-black mt-6">2. How We Use Your Information</h3>
+                <p>We use the information we collect to:</p>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Provide, maintain, and improve our products and services;</li>
+                    <li>Process transactions and send you related information, including confirmations and invoices;</li>
+                    <li>Send you technical notices, updates, security alerts, and support and administrative messages;</li>
+                    <li>Respond to your comments, questions, and requests and provide customer service;</li>
+                    <li>Communicate with you about products, services, offers, promotions, and events.</li>
+                </ul>
+                <h3 class="text-lg font-bold text-black mt-6">3. Cookies and Tracking Technologies</h3>
+                <p>We use cookies and similar tracking technologies to track the activity on our Service and hold certain information. Cookies are files with small amount of data which may include an anonymous unique identifier. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.</p>
+                <p><strong>Google Ads & Analytics:</strong> We use third-party services such as Google Analytics and Google Ads to collect, monitor and analyze this type of information in order to increase our Service's functionality. These third-party service providers have their own privacy policies addressing how they use such information.</p>
+                <h3 class="text-lg font-bold text-black mt-6">4. Third-Party Disclosure</h3>
+                <p>We do not sell, trade, or otherwise transfer to outside parties your Personally Identifiable Information unless we provide users with advance notice. This does not include website hosting partners and other parties who assist us in operating our website, conducting our business, or serving our users, so long as those parties agree to keep this information confidential.</p>
+                <h3 class="text-lg font-bold text-black mt-6">5. Security</h3>
+                <p>The security of your data is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.</p>
+                <h3 class="text-lg font-bold text-black mt-6">6. Contact Us</h3>
+                <p>If you have any questions about this Privacy Policy, please contact us:</p>
+                <ul class="list-none space-y-1 mt-2 font-medium text-black">
+                    <li>Phone: +1 (217) 439-8884</li>
+                    <li>Email: support@froplay.com</li>
+                </ul>
+            </article>
 
-            <!-- Terms Content (German Placeholder) -->
-            <div id="terms-content" class="hidden-section space-y-6 text-gray-700 text-sm md:text-base leading-relaxed">
-                <h1 class="text-3xl font-black text-black mb-8">Nutzungsbedingungen</h1>
-                <p>Hier finden Sie unsere Nutzungsbedingungen...</p>
-            </div>
+            <!-- Terms Content -->
+            <article id="terms-content" class="hidden-section space-y-6 text-gray-700 text-sm md:text-base leading-relaxed">
+                <h1 class="text-3xl font-black text-black mb-8">Terms of Service</h1>
+                <p class="text-gray-500 text-xs">Last Updated: October 2025</p>
+                <h3 class="text-lg font-bold text-black mt-6">1. Overview</h3>
+                <p>This website is operated by Leaf Lab. Throughout the site, the terms "we", "us" and "our" refer to Leaf Lab. Leaf Lab offers this website, including all information, tools and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.</p>
+                <h3 class="text-lg font-bold text-black mt-6">2. Online Store Terms</h3>
+                <p>By agreeing to these Terms of Service, you represent that you are at least the age of majority in your state or province of residence. You may not use our products for any illegal or unauthorized purpose nor may you, in the use of the Service, violate any laws in your jurisdiction.</p>
+                <h3 class="text-lg font-bold text-black mt-6">3. Products and Services</h3>
+                <p>We have made every effort to display as accurately as possible the colors and images of our products that appear at the store. We cannot guarantee that your computer monitor's display of any color will be accurate. We reserve the right, but are not obligated, to limit the sales of our products or Services to any person, geographic region or jurisdiction.</p>
+                <h3 class="text-lg font-bold text-black mt-6">4. Billing and Account Information</h3>
+                <p>We reserve the right to refuse any order you place with us. We may, in our sole discretion, limit or cancel quantities purchased per person, per household or per order. In the event that we make a change to or cancel an order, we may attempt to notify you by contacting the e-mail and/or billing address/phone number provided at the time the order was made.</p>
+                <h3 class="text-lg font-bold text-black mt-6">5. Governing Law</h3>
+                <p>These Terms of Service and any separate agreements whereby we provide you Services shall be governed by and construed in accordance with the laws of the United States.</p>
+                <h3 class="text-lg font-bold text-black mt-6">6. Contact Information</h3>
+                <p>Questions about the Terms of Service should be sent to us at support@froplay.com or by calling +1 (217) 439-8884.</p>
+            </article>
         </div>
         
         <div class="border-t border-gray-200 py-6 text-center">
-            <p class="text-gray-400 text-sm">© 2025 Froplay. Alle Rechte vorbehalten.</p>
+            <p class="text-gray-400 text-sm">© 2025 Leaf Lab. All rights reserved.</p>
         </div>
+    </section>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="bg-black text-white px-6 py-3 rounded-lg shadow-xl font-medium flex items-center gap-3">
+        <span id="toast-message">Notification</span>
     </div>
 
     <script>
+        const translations = {
+            en: {
+                top_bar: "SPECIAL LIMITED TIME OFFER | 75% OFF",
+                hero_title: "Gentle, Daily Support<br>for Your Body",
+                badge_best: "BEST<br>PRODUCTS",
+                badge_toys: "TOP RATED",
+                badge_winner: "WINNER",
+                ratings: "Trusted by Thousands | A Growing UK Community",
+                main_title: "Gentle, Daily Support for Your Body",
+                subtitle: "<p class='font-bold mb-2'>0% THC. Tested ingredients. No unnecessary additives.</p>Leaf Lab is a carefully formulated CBD supplement designed to support your body’s natural balance and fit seamlessly into your daily routine — simple, consistent and responsible.",
+                why_love: "WHY PEOPLE IN THE UK CHOOSE LEAF LAB",
+                feat_1_title: "Tested ingredients with 0% THC",
+                feat_1_desc: "Formulated with hemp-derived CBD isolate and no detectable THC, ensuring a clean and controlled product.",
+                feat_2_title: "Simple, once-daily routine",
+                feat_2_desc: "Just one capsule per day — easy to incorporate into everyday life.",
+                feat_3_title: "Thoughtfully crafted, minimalist formula",
+                feat_3_desc: "Made with only essential ingredients, non-GMO, and free from unnecessary fillers.",
+                feat_4_title: "Designed for long-term, consistent use",
+                feat_4_desc: "Ideal for those who value steady, ongoing support rather than short-term solutions.",
+                social_proof: "Thousands of Happy Customers",
+                stock: "In stock",
+                limited_deal: "Limited 75% Off Deal Ending Soon",
+                select_title: "Select Your Country to Unlock Today’s Best Leaf Lab Offer",
+                select_subtitle: "Get the lowest price available in your region, local currency, and the fastest shipping options.<br>Click on your flag to see your exclusive deal.",
+                footer_care_title: "CUSTOMER CARE",
+                footer_email: "Send Us An Email",
+                footer_chat: "24/7 Live Chat",
+                cta_button: "GET 75% OFF DISCOUNT NOW!",
+                cta_guarantee: "Try it today with a 30-Day Money Back Guarantee!",
+                footer_text: "Leaf Lab provides high-quality, 0% THC CBD supplements to support your daily wellness journey. Our commitment to transparency and simple, natural ingredients ensures you get the gentle support your body needs."
+            }
+        };
+
+        function setLanguage(lang, countryCode) {
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+
+            const regionFlag = document.getElementById('dynamic-region-flag');
+            if (regionFlag) {
+                regionFlag.src = `https://flagcdn.com/w20/${countryCode}.png`;
+            }
+        }
+
+        // Custom Toast Notification instead of alert
+        function showToast(message, type = 'default') {
+            const toast = document.getElementById('toast-container');
+            const msgSpan = document.getElementById('toast-message');
+            msgSpan.innerText = message;
+            toast.classList.add('show');
+            
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+
         // Simple View Router for Legal Pages
         function showPolicy(type) {
             document.getElementById('landing-page').style.display = 'none';
@@ -448,9 +586,8 @@
         function hidePolicy() {
             document.getElementById('legal-page').style.display = 'none';
             document.getElementById('landing-page').style.display = 'block';
-            window.scrollTo(0, document.body.scrollHeight);
+            window.scrollTo(0, 0); // Reset scroll to top when returning
         }
     </script>
 </body>
 </html>
-
