@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
     <!-- TRACKING SCRIPTS -->
     <script src="https://cdn.jsdelivr.net/gh/casmar76/SmartClick/smart_click.js" data-origin-url="https://pixel.insulinet.site"></script>
@@ -17,8 +17,9 @@
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="author" content="Froplay Official">
     
-    <!-- Favicon -->
+    <!-- Favicon (Fixed Path) -->
     <link rel="icon" type="image/png" href="images/favicon-leaf.png">
+    <link rel="shortcut icon" type="image/png" href="images/favicon-leaf.png">
 
     <!-- Canonical & Hreflang -->
     <link rel="canonical" href="https://leaflab-caps.vercel.app/">
@@ -183,10 +184,7 @@
     <!-- LANDING PAGE CONTENT WRAPPED IN MAIN FOR SEO SEMANTICS -->
     <main id="landing-page" role="main">
         
-        <!-- Top Bar -->
-        <div class="bg-black text-white text-[10px] md:text-xs font-bold py-2 text-center uppercase tracking-wide w-full">
-            <span data-i18n="top_bar">SPECIAL LIMITED TIME OFFER | 75% OFF</span>
-        </div>
+        <!-- Top Bar Removed as requested -->
 
         <!-- Navbar -->
         <!-- Changed to brand green bg for white logo visibility -->
@@ -208,7 +206,6 @@
         </header>
 
         <!-- Hero Image Section - Fixed Proportions & Mobile Size -->
-        <!-- Using a padding-based container to ensure image is not too big but nicely framed -->
         <section class="w-full bg-[#f3f4f6] py-6 md:py-10">
             <div class="container mx-auto px-4">
                 <div class="w-full flex justify-center">
@@ -289,7 +286,7 @@
 
                     <!-- CTA SECTION -->
                     <div class="w-full mb-10 mt-8">
-                        <a href="https://www.fasttrack37.com/PM7HK3TH/2S1LB4KQ/?uid=49860" class="block w-full bg-[#2e2e2e] hover:bg-black text-white font-black text-xl md:text-2xl py-5 rounded-lg shadow-lg hover:shadow-xl transform transition hover:-translate-y-0.5 uppercase tracking-wide mb-4 text-center">
+                        <a href="#country-selection" class="block w-full bg-[#2e2e2e] hover:bg-black text-white font-black text-xl md:text-2xl py-5 rounded-lg shadow-lg hover:shadow-xl transform transition hover:-translate-y-0.5 uppercase tracking-wide mb-4 text-center">
                             <span data-i18n="cta_button">GET YOUR DISCOUNT NOW!</span>
                         </a>
                         
@@ -384,7 +381,10 @@
                 
                 <div class="flex flex-col justify-center items-center gap-10 mb-10">
                     <div class="flex flex-col items-center gap-4">
-                        <img src="images/leaf-lab-logo.png" onerror="this.style.display='none'" alt="Leaf Lab Logo" class="h-8 w-auto opacity-80 grayscale rounded">
+                        <!-- Logo with green container for visibility -->
+                        <div class="p-3 bg-[#405436] rounded-lg shadow-sm">
+                            <img src="images/leaf-lab-logo.png" onerror="this.src='https://placehold.co/120x40/405436/white?text=Leaf+Lab&font=montserrat'" alt="Leaf Lab Logo" class="h-8 w-auto opacity-90 object-contain">
+                        </div>
                         
                         <p class="text-center text-gray-500 text-sm md:text-base leading-relaxed max-w-2xl mx-auto" data-i18n="footer_text">
                             Leaf Lab provides high-quality, 0% THC CBD supplements to support your daily wellness journey. Our commitment to transparency and simple, natural ingredients ensures you get the gentle support your body needs.
@@ -444,7 +444,9 @@
     <section id="legal-page" class="hidden-section w-full bg-white min-h-screen" aria-label="Legal Information">
         <div class="border-b border-gray-200 py-4 px-4 sticky top-0 bg-white z-50 shadow-sm">
             <div class="container mx-auto max-w-4xl flex justify-between items-center">
-                <img src="images/leaf-lab-logo.png" onerror="this.src='https://placehold.co/120x40/405436/white?text=Leaf+Lab&font=montserrat'" alt="Leaf Lab Logo" class="h-6 md:h-8 w-auto rounded">
+                <div class="p-2 bg-[#405436] rounded">
+                    <img src="images/leaf-lab-logo.png" onerror="this.src='https://placehold.co/120x40/405436/white?text=Leaf+Lab&font=montserrat'" alt="Leaf Lab Logo" class="h-6 md:h-8 w-auto rounded object-contain">
+                </div>
                 <button onclick="hidePolicy()" class="flex items-center gap-2 text-sm font-bold text-[#405436] hover:text-[#2a3824] transition-colors">
                     <i class="fas fa-arrow-left"></i> Back to Home
                 </button>
