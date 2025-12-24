@@ -13,7 +13,7 @@
     <title>Leaf Lab – Gentle, Daily CBD Support for Your Body</title>
     <meta name="description" content="Leaf Lab is a carefully formulated CBD supplement with 0% THC. Designed to support your body’s natural balance. Simple, consistent, and responsible. Shop now.">
     <!-- Enhanced Keywords for Organic Reach -->
-    <meta name="keywords" content="Leaf Lab, CBD Supplement, 0% THC, Hemp Derived, Wellness, Daily Supplement, Natural Balance, No Additives, Froplay Leaf Lab">
+    <meta name="keywords" content="Leaf Lab, Leaf Lab cbd, CBD Supplement, 0% THC, Hemp Derived, Wellness, Daily Supplement, Natural Balance, No Additives">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="author" content="Froplay Official">
     
@@ -21,13 +21,17 @@
     <link rel="icon" type="image/png" href="images/favicon-leaf.png">
 
     <!-- Canonical & Hreflang -->
-    <link rel="canonical" href="https://leaflab.froplay.shop/">
-    <link rel="alternate" hreflang="en" href="https://leaflab.froplay.shop/">
-    <link rel="alternate" hreflang="x-default" href="https://leaflab.froplay.shop/">
+    <link rel="canonical" href="https://leaflab-caps.vercel.app/">
+    <link rel="alternate" hreflang="en" href="https://leaflab-caps.vercel.app/">
+    <link rel="alternate" hreflang="de" href="https://leaflab-caps.vercel.app/?lang=de">
+    <link rel="alternate" hreflang="it" href="https://leaflab-caps.vercel.app/?lang=it">
+    <link rel="alternate" hreflang="sv" href="https://leaflab-caps.vercel.app/?lang=sv">
+    <link rel="alternate" hreflang="fi" href="https://leaflab-caps.vercel.app/?lang=fi">
+    <link rel="alternate" hreflang="x-default" href="https://leaflab-caps.vercel.app/">
 
     <!-- Open Graph / Facebook (Optimized for Social Sharing) -->
     <meta property="og:type" content="product">
-    <meta property="og:url" content="https://leaflab.froplay.shop/">
+    <meta property="og:url" content="https://leaflab-caps.vercel.app/">
     <meta property="og:title" content="Leaf Lab – Gentle, Daily Support for Your Body">
     <meta property="og:description" content="0% THC. Tested ingredients. Leaf Lab is a formulated CBD supplement designed for your daily routine.">
     <meta property="og:image" content="images/leaf-lab.png">
@@ -39,7 +43,7 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://leaflab.froplay.shop/">
+    <meta name="twitter:url" content="https://leaflab-caps.vercel.app/">
     <meta name="twitter:title" content="Leaf Lab – 0% THC Daily CBD Supplement">
     <meta name="twitter:description" content="Tested ingredients. No unnecessary additives. Simple, consistent support for your body.">
     <meta name="twitter:image" content="images/leaf-lab.png">
@@ -61,17 +65,17 @@
         {
           "@type": "WebSite",
           "name": "Leaf Lab Official",
-          "url": "https://leaflab.froplay.shop/",
+          "url": "https://leaflab-caps.vercel.app/",
           "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://leaflab.froplay.shop/search?q={search_term_string}",
+            "target": "https://leaflab-caps.vercel.app/search?q={search_term_string}",
             "query-input": "required name=search_term_string"
           }
         },
         {
           "@type": "Organization",
           "name": "Leaf Lab",
-          "url": "https://leaflab.froplay.shop/",
+          "url": "https://leaflab-caps.vercel.app/",
           "logo": {
             "@type": "ImageObject",
             "url": "images/leaf-lab-logo.png",
@@ -82,8 +86,8 @@
             "@type": "ContactPoint",
             "telephone": "+1-217-439-8884",
             "contactType": "customer service",
-            "areaServed": ["US", "CA", "UK", "AU", "Global"],
-            "availableLanguage": "English"
+            "areaServed": ["US", "CA", "UK", "AU", "DE", "IT", "SE", "FI"],
+            "availableLanguage": ["English", "German", "Italian", "Swedish", "Finnish"]
           }
         },
         {
@@ -107,7 +111,7 @@
           },
           "offers": {
             "@type": "Offer",
-            "url": "https://leaflab.froplay.shop/",
+            "url": "https://leaflab-caps.vercel.app/",
             "priceCurrency": "USD",
             "price": "49.99", 
             "priceValidUntil": "2025-12-31",
@@ -126,6 +130,7 @@
         body {
             font-family: 'Inter', sans-serif;
             -webkit-font-smoothing: antialiased;
+            color: #1f2937; /* Consistent dark gray text */
         }
         .hero-shadow {
             text-shadow: 0 2px 4px rgba(0,0,0,0.6);
@@ -144,11 +149,18 @@
         .country-card:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-            border-color: #10b981;
+            border-color: #405436;
         }
         .hidden-section {
             display: none;
         }
+        
+        /* Consistent Green Color Utilities */
+        .text-brand-green { color: #405436; }
+        .bg-brand-green { background-color: #405436; }
+        .border-brand-green { border-color: #405436; }
+        .hover-text-brand-green:hover { color: #405436; }
+        .hover-border-brand-green:hover { border-color: #405436; }
         
         /* Toast Notification */
         #toast-container {
@@ -181,35 +193,36 @@
             <div class="container mx-auto flex justify-between items-center">
                 <div class="flex items-center">
                     <!-- Updated Logo -->
-                    <img src="images/leaf-lab-logo.png" onerror="this.src='https://placehold.co/120x40/10b981/white?text=Leaf+Lab&font=montserrat'" alt="Leaf Lab Logo" class="h-8 md:h-10 w-auto rounded">
+                    <img src="images/leaf-lab-logo.png" onerror="this.src='https://placehold.co/120x40/405436/white?text=Leaf+Lab&font=montserrat'" alt="Leaf Lab Logo" class="h-8 md:h-10 w-auto rounded">
                 </div>
-                <!-- Flags removed as requested -->
-                <div class="hidden md:block"></div> 
+                <!-- Manual Language Switcher -->
+                <div class="flex items-center gap-2">
+                    <img src="https://flagcdn.com/w20/gb.png" onclick="setLanguage('en', 'gb')" class="flag-btn h-3 md:h-4 w-auto shadow-sm rounded-[1px]" alt="English" title="English">
+                    <img src="https://flagcdn.com/w20/se.png" onclick="setLanguage('sv', 'se')" class="flag-btn h-3 md:h-4 w-auto shadow-sm rounded-[1px]" alt="Svenska" title="Svenska">
+                    <img src="https://flagcdn.com/w20/fi.png" onclick="setLanguage('fi', 'fi')" class="flag-btn h-3 md:h-4 w-auto shadow-sm rounded-[1px]" alt="Suomi" title="Suomi">
+                    <img src="https://flagcdn.com/w20/de.png" onclick="setLanguage('de', 'de')" class="flag-btn h-3 md:h-4 w-auto shadow-sm rounded-[1px]" alt="Deutsch" title="Deutsch">
+                    <img src="https://flagcdn.com/w20/it.png" onclick="setLanguage('it', 'it')" class="flag-btn h-3 md:h-4 w-auto shadow-sm rounded-[1px]" alt="Italiano" title="Italiano">
+                </div>
             </div>
         </header>
 
-        <!-- Hero Image Section -->
-        <!-- Adjusted height classes: h-[250px] md:h-[350px] lg:h-[450px] (Reduced from 400/500/600) -->
-        <section class="relative w-full h-[250px] md:h-[350px] lg:h-[450px] bg-gray-200 overflow-hidden group">
-            <!-- Updated Hero Image for CBD/Wellness -->
-            <img src="images/leaf-lab.png" onerror="this.src='https://placehold.co/1200x600?text=Leaf+Lab+CBD'" class="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" alt="Leaf Lab CBD Supplement Bottle">
-            
-            <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/10"></div>
-            <div class="absolute inset-0 container mx-auto px-4 pointer-events-none">
-                <div class="relative w-full h-full">
-                    <div class="absolute top-6 left-0 right-0 z-10 md:top-12 md:left-4">
-                        <!-- Empty Hero Title Area -->
-                    </div>
-                </div>
+        <!-- Hero Image Section - Fixed Proportions -->
+        <!-- Using w-full and ensuring the image scales naturally without being cropped awkwardly -->
+        <section class="w-full bg-[#f3f4f6] overflow-hidden">
+            <div class="w-full max-w-[1400px] mx-auto">
+                <img src="images/leaf-lab.png" 
+                     onerror="this.src='https://placehold.co/1200x600?text=Leaf+Lab+CBD'" 
+                     class="w-full h-auto object-cover md:object-contain max-h-[500px] md:max-h-[650px] mx-auto block" 
+                     alt="Leaf Lab CBD Supplement Bottle">
             </div>
         </section>
 
         <!-- Content Section -->
-        <section class="container mx-auto px-4 py-6 md:py-10 max-w-5xl">
+        <section class="container mx-auto px-4 py-8 md:py-12 max-w-5xl">
             <div class="grid md:grid-cols-1 gap-8">
                 <article>
                     <!-- Ratings -->
-                    <div class="flex flex-wrap items-center gap-2 mb-3 text-sm md:text-base">
+                    <div class="flex flex-wrap items-center gap-2 mb-4 text-sm md:text-base">
                         <div class="flex text-yellow-400" aria-label="5 out of 5 stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -219,60 +232,60 @@
                         </div>
                         <span class="font-bold text-gray-900">5.0</span>
                         <span class="text-gray-300 mx-1">|</span>
-                        <span class="text-gray-600 italic" data-i18n="ratings">Trusted by Thousands | A Growing UK Community</span>
+                        <span class="text-gray-600 italic font-medium" data-i18n="ratings">Trusted by Thousands | A Growing UK Community</span>
                     </div>
 
                     <!-- Main Title (H1) -->
-                    <h1 class="text-2xl md:text-4xl font-black text-black leading-tight mb-4" data-i18n="main_title">
+                    <h1 class="text-3xl md:text-5xl font-black text-black leading-tight mb-6 tracking-tight" data-i18n="main_title">
                         Gentle, Daily Support for Your Body
                     </h1>
 
                     <!-- Subtitle -->
-                    <div class="text-gray-600 font-medium text-[16px] md:text-lg leading-relaxed mb-8 max-w-3xl" data-i18n="subtitle">
-                        <p class="font-bold mb-2">0% THC. Tested ingredients. No unnecessary additives.</p>
+                    <div class="text-gray-600 font-medium text-lg md:text-xl leading-relaxed mb-10 max-w-3xl" data-i18n="subtitle">
+                        <p class="font-bold mb-2 text-[#405436]">0% THC. Tested ingredients. No unnecessary additives.</p>
                         Leaf Lab is a carefully formulated CBD supplement designed to support your body’s natural balance and fit seamlessly into your daily routine — simple, consistent and responsible.
                     </div>
 
                     <!-- Features Section -->
-                    <div class="mb-6">
-                        <h2 class="text-lg font-bold text-black mb-4 uppercase tracking-wide border-l-4 border-green-500 pl-3" data-i18n="why_love">
+                    <div class="mb-8">
+                        <h2 class="text-xl md:text-2xl font-bold text-black mb-6 uppercase tracking-wide border-l-4 border-[#405436] pl-4" data-i18n="why_love">
                             WHY PEOPLE IN THE UK CHOOSE LEAF LAB
                         </h2>
-                        <ul class="space-y-4 md:grid md:grid-cols-2 md:space-y-0 md:gap-x-6 md:gap-y-6">
-                            <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-green-600 text-xl mt-1 shrink-0"></i>
+                        <ul class="space-y-6 md:grid md:grid-cols-2 md:space-y-0 md:gap-x-8 md:gap-y-8">
+                            <li class="flex items-start gap-4">
+                                <i class="fas fa-check-circle text-[#405436] text-2xl mt-1 shrink-0"></i>
                                 <div>
-                                    <span class="block text-gray-900 font-bold" data-i18n="feat_1_title">Tested ingredients with 0% THC</span>
-                                    <span class="block text-gray-600 text-sm mt-1 leading-snug" data-i18n="feat_1_desc">Formulated with hemp-derived CBD isolate and no detectable THC, ensuring a clean and controlled product.</span>
+                                    <span class="block text-gray-900 font-bold text-lg" data-i18n="feat_1_title">Tested ingredients with 0% THC</span>
+                                    <span class="block text-gray-600 text-base mt-1 leading-snug" data-i18n="feat_1_desc">Formulated with hemp-derived CBD isolate and no detectable THC, ensuring a clean and controlled product.</span>
                                 </div>
                             </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-green-600 text-xl mt-1 shrink-0"></i>
+                            <li class="flex items-start gap-4">
+                                <i class="fas fa-check-circle text-[#405436] text-2xl mt-1 shrink-0"></i>
                                 <div>
-                                    <span class="block text-gray-900 font-bold" data-i18n="feat_2_title">Simple, once-daily routine</span>
-                                    <span class="block text-gray-600 text-sm mt-1 leading-snug" data-i18n="feat_2_desc">Just one capsule per day — easy to incorporate into everyday life.</span>
+                                    <span class="block text-gray-900 font-bold text-lg" data-i18n="feat_2_title">Simple, once-daily routine</span>
+                                    <span class="block text-gray-600 text-base mt-1 leading-snug" data-i18n="feat_2_desc">Just one capsule per day — easy to incorporate into everyday life.</span>
                                 </div>
                             </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-green-600 text-xl mt-1 shrink-0"></i>
+                            <li class="flex items-start gap-4">
+                                <i class="fas fa-check-circle text-[#405436] text-2xl mt-1 shrink-0"></i>
                                 <div>
-                                    <span class="block text-gray-900 font-bold" data-i18n="feat_3_title">Thoughtfully crafted, minimalist formula</span>
-                                    <span class="block text-gray-600 text-sm mt-1 leading-snug" data-i18n="feat_3_desc">Made with only essential ingredients, non-GMO, and free from unnecessary fillers.</span>
+                                    <span class="block text-gray-900 font-bold text-lg" data-i18n="feat_3_title">Thoughtfully crafted, minimalist formula</span>
+                                    <span class="block text-gray-600 text-base mt-1 leading-snug" data-i18n="feat_3_desc">Made with only essential ingredients, non-GMO, and free from unnecessary fillers.</span>
                                 </div>
                             </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-green-600 text-xl mt-1 shrink-0"></i>
+                            <li class="flex items-start gap-4">
+                                <i class="fas fa-check-circle text-[#405436] text-2xl mt-1 shrink-0"></i>
                                 <div>
-                                    <span class="block text-gray-900 font-bold" data-i18n="feat_4_title">Designed for long-term, consistent use</span>
-                                    <span class="block text-gray-600 text-sm mt-1 leading-snug" data-i18n="feat_4_desc">Ideal for those who value steady, ongoing support rather than short-term solutions.</span>
+                                    <span class="block text-gray-900 font-bold text-lg" data-i18n="feat_4_title">Designed for long-term, consistent use</span>
+                                    <span class="block text-gray-600 text-base mt-1 leading-snug" data-i18n="feat_4_desc">Ideal for those who value steady, ongoing support rather than short-term solutions.</span>
                                 </div>
                             </li>
                         </ul>
                     </div>
 
                     <!-- CTA SECTION -->
-                    <div class="w-full mb-8">
-                        <a href="https://www.fasttrack37.com/PM7HK3TH/2S1LB4KQ/?uid=49860" class="block w-full bg-[#2e2e2e] hover:bg-black text-white font-black text-xl md:text-2xl py-4 rounded-lg shadow-lg hover:shadow-xl transform transition hover:-translate-y-0.5 uppercase tracking-wide mb-4 text-center">
+                    <div class="w-full mb-10 mt-8">
+                        <a href="https://www.fasttrack37.com/PM7HK3TH/2S1LB4KQ/?uid=49860" class="block w-full bg-[#2e2e2e] hover:bg-black text-white font-black text-xl md:text-2xl py-5 rounded-lg shadow-lg hover:shadow-xl transform transition hover:-translate-y-0.5 uppercase tracking-wide mb-4 text-center">
                             <span data-i18n="cta_button">GET YOUR DISCOUNT NOW!</span>
                         </a>
                         
@@ -284,22 +297,22 @@
                     </div>
 
                     <!-- Social Proof Box -->
-                    <div class="border border-gray-200 rounded-xl p-4 shadow-sm bg-gray-50 md:max-w-lg mb-10">
+                    <div class="border border-gray-200 rounded-xl p-5 shadow-sm bg-gray-50 md:max-w-lg mb-12">
                         <div class="flex items-center justify-center gap-3 pb-3 border-b border-gray-200 mb-3">
                             <div class="flex -space-x-3">
-                                <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=32" alt="Customer Avatar">
-                                <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=11" alt="Customer Avatar">
-                                <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=53" alt="Customer Avatar">
-                                <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=9" alt="Customer Avatar">
-                                <div class="w-8 h-8 rounded-full border-2 border-white bg-green-100 flex items-center justify-center text-[9px] font-bold text-green-800">
+                                <img class="w-10 h-10 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=32" alt="Customer Avatar">
+                                <img class="w-10 h-10 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=11" alt="Customer Avatar">
+                                <img class="w-10 h-10 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=53" alt="Customer Avatar">
+                                <img class="w-10 h-10 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=9" alt="Customer Avatar">
+                                <div class="w-10 h-10 rounded-full border-2 border-white bg-[#405436]/10 flex items-center justify-center text-[10px] font-bold text-[#405436]">
                                     <i class="fas fa-plus"></i>
                                 </div>
                             </div>
-                            <span class="text-sm font-bold text-gray-800" data-i18n="social_proof">Thousands of Happy Customers</span>
+                            <span class="text-base font-bold text-gray-800" data-i18n="social_proof">Thousands of Happy Customers</span>
                         </div>
-                        <div class="flex flex-col sm:flex-row items-center justify-center gap-2 text-green-700 text-sm font-bold">
+                        <div class="flex flex-col sm:flex-row items-center justify-center gap-2 text-[#405436] text-sm font-bold">
                             <div class="flex items-center gap-2">
-                                <i class="fas fa-check text-green-600"></i>
+                                <i class="fas fa-check text-[#405436]"></i>
                                 <span data-i18n="stock">In stock</span>
                             </div>
                             <span class="hidden sm:block text-gray-300">|</span>
@@ -328,39 +341,33 @@
                 <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 justify-center max-w-4xl mx-auto">
                     
                     <!-- 1. Sweden -->
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2S1LB4KQ/?uid=49860" class="group bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-green-500/30 transition-all duration-300 flex flex-col items-center gap-3 no-underline hover:-translate-y-1">
+                    <a href="https://www.clickrtrckr.com/2LXFFTP/5RKWLDR/" class="group bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-[#405436]/30 transition-all duration-300 flex flex-col items-center gap-3 no-underline hover:-translate-y-1">
                         <img src="https://flagcdn.com/w80/se.png" alt="Sweden Flag" class="w-12 h-auto rounded shadow-sm">
-                        <span class="font-bold text-slate-900 text-base group-hover:text-green-600">Sweden</span>
+                        <span class="font-bold text-slate-900 text-base group-hover:text-[#405436]">Sweden</span>
                     </a>
 
                     <!-- 2. Finland -->
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2S1LB4KQ/?uid=49860" class="group bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-green-500/30 transition-all duration-300 flex flex-col items-center gap-3 no-underline hover:-translate-y-1">
+                    <a href="https://www.clickrtrckr.com/2LXFFTP/5QFZ9GS/" class="group bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-[#405436]/30 transition-all duration-300 flex flex-col items-center gap-3 no-underline hover:-translate-y-1">
                         <img src="https://flagcdn.com/w80/fi.png" alt="Finland Flag" class="w-12 h-auto rounded shadow-sm">
-                        <span class="font-bold text-slate-900 text-base group-hover:text-green-600">Finland</span>
+                        <span class="font-bold text-slate-900 text-base group-hover:text-[#405436]">Finland</span>
                     </a>
 
-                    <!-- 3. United States -->
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2S1LB4KQ/?uid=49860" class="group bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-green-500/30 transition-all duration-300 flex flex-col items-center gap-3 no-underline hover:-translate-y-1">
-                        <img src="https://flagcdn.com/w80/us.png" alt="United States Flag" class="w-12 h-auto rounded shadow-sm">
-                        <span class="font-bold text-slate-900 text-base group-hover:text-green-600">United States</span>
-                    </a>
-
-                    <!-- 4. United Kingdom -->
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2S1LB4KQ/?uid=49860" class="group bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-green-500/30 transition-all duration-300 flex flex-col items-center gap-3 no-underline hover:-translate-y-1">
+                    <!-- 3. United Kingdom -->
+                    <a href="https://www.clickrtrckr.com/2LXFFTP/5RRG5C7/" class="group bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-[#405436]/30 transition-all duration-300 flex flex-col items-center gap-3 no-underline hover:-translate-y-1">
                         <img src="https://flagcdn.com/w80/gb.png" alt="United Kingdom Flag" class="w-12 h-auto rounded shadow-sm">
-                        <span class="font-bold text-slate-900 text-base group-hover:text-green-600">United Kingdom</span>
+                        <span class="font-bold text-slate-900 text-base group-hover:text-[#405436]">United Kingdom</span>
                     </a>
 
-                    <!-- 5. Germany -->
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2S1LB4KQ/?uid=49860" class="group bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-green-500/30 transition-all duration-300 flex flex-col items-center gap-3 no-underline hover:-translate-y-1">
+                    <!-- 4. Germany -->
+                    <a href="https://www.clickrtrckr.com/2LXFFTP/5PT9NMJ/" class="group bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-[#405436]/30 transition-all duration-300 flex flex-col items-center gap-3 no-underline hover:-translate-y-1">
                         <img src="https://flagcdn.com/w80/de.png" alt="Germany Flag" class="w-12 h-auto rounded shadow-sm">
-                        <span class="font-bold text-slate-900 text-base group-hover:text-green-600">Germany</span>
+                        <span class="font-bold text-slate-900 text-base group-hover:text-[#405436]">Germany</span>
                     </a>
 
-                    <!-- 6. Italy -->
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2S1LB4KQ/?uid=49860" class="group bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-green-500/30 transition-all duration-300 flex flex-col items-center gap-3 no-underline hover:-translate-y-1">
+                    <!-- 5. Italy -->
+                    <a href="https://www.clickrtrckr.com/2LXFFTP/5R2LWB4/" class="group bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-[#405436]/30 transition-all duration-300 flex flex-col items-center gap-3 no-underline hover:-translate-y-1">
                         <img src="https://flagcdn.com/w80/it.png" alt="Italy Flag" class="w-12 h-auto rounded shadow-sm">
-                        <span class="font-bold text-slate-900 text-base group-hover:text-green-600">Italy</span>
+                        <span class="font-bold text-slate-900 text-base group-hover:text-[#405436]">Italy</span>
                     </a>
 
                 </div>
@@ -433,8 +440,8 @@
     <section id="legal-page" class="hidden-section w-full bg-white min-h-screen" aria-label="Legal Information">
         <div class="border-b border-gray-200 py-4 px-4 sticky top-0 bg-white z-50 shadow-sm">
             <div class="container mx-auto max-w-4xl flex justify-between items-center">
-                <img src="images/leaf-lab-logo.png" onerror="this.src='https://placehold.co/120x40/10b981/white?text=Leaf+Lab&font=montserrat'" alt="Leaf Lab Logo" class="h-6 md:h-8 w-auto rounded">
-                <button onclick="hidePolicy()" class="flex items-center gap-2 text-sm font-bold text-blue-600 hover:text-blue-800 transition-colors">
+                <img src="images/leaf-lab-logo.png" onerror="this.src='https://placehold.co/120x40/405436/white?text=Leaf+Lab&font=montserrat'" alt="Leaf Lab Logo" class="h-6 md:h-8 w-auto rounded">
+                <button onclick="hidePolicy()" class="flex items-center gap-2 text-sm font-bold text-[#405436] hover:text-[#2a3824] transition-colors">
                     <i class="fas fa-arrow-left"></i> Back to Home
                 </button>
             </div>
@@ -505,13 +512,9 @@
         const translations = {
             en: {
                 top_bar: "SPECIAL LIMITED TIME OFFER | 75% OFF",
-                hero_title: "Gentle, Daily Support<br>for Your Body",
-                badge_best: "BEST<br>PRODUCTS",
-                badge_toys: "TOP RATED",
-                badge_winner: "WINNER",
                 ratings: "Trusted by Thousands | A Growing UK Community",
                 main_title: "Gentle, Daily Support for Your Body",
-                subtitle: "<p class='font-bold mb-2'>0% THC. Tested ingredients. No unnecessary additives.</p>Leaf Lab is a carefully formulated CBD supplement designed to support your body’s natural balance and fit seamlessly into your daily routine — simple, consistent and responsible.",
+                subtitle: "<p class='font-bold mb-2 text-[#405436]'>0% THC. Tested ingredients. No unnecessary additives.</p>Leaf Lab is a carefully formulated CBD supplement designed to support your body’s natural balance and fit seamlessly into your daily routine — simple, consistent and responsible.",
                 why_love: "WHY PEOPLE IN THE UK CHOOSE LEAF LAB",
                 feat_1_title: "Tested ingredients with 0% THC",
                 feat_1_desc: "Formulated with hemp-derived CBD isolate and no detectable THC, ensuring a clean and controlled product.",
@@ -532,6 +535,110 @@
                 cta_button: "GET YOUR DISCOUNT NOW!",
                 cta_guarantee: "Try it today with a 30-Day Money Back Guarantee!",
                 footer_text: "Leaf Lab provides high-quality, 0% THC CBD supplements to support your daily wellness journey. Our commitment to transparency and simple, natural ingredients ensures you get the gentle support your body needs."
+            },
+            de: {
+                top_bar: "BEFRISTETES SONDERANGEBOT | 75% RABATT",
+                ratings: "Tausenden vertrauen | Eine wachsende Community in DE",
+                main_title: "Sanfte, tägliche Unterstützung für Ihren Körper",
+                subtitle: "<p class='font-bold mb-2 text-[#405436]'>0% THC. Geprüfte Inhaltsstoffe. Keine unnötigen Zusätze.</p>Leaf Lab ist ein sorgfältig formuliertes CBD-Präparat, das entwickelt wurde, um das natürliche Gleichgewicht Ihres Körpers zu unterstützen und sich nahtlos in Ihre tägliche Routine einzufügen – einfach, konsistent und verantwortungsbewusst.",
+                why_love: "WARUM MENSCHEN LEAF LAB WÄHLEN",
+                feat_1_title: "Geprüfte Inhaltsstoffe mit 0% THC",
+                feat_1_desc: "Formuliert mit aus Hanf gewonnenem CBD-Isolat und keinem nachweisbaren THC, was ein reines und kontrolliertes Produkt gewährleistet.",
+                feat_2_title: "Einfache, einmal tägliche Routine",
+                feat_2_desc: "Nur eine Kapsel pro Tag – einfach in den Alltag zu integrieren.",
+                feat_3_title: "Durchdachte, minimalistische Formel",
+                feat_3_desc: "Hergestellt nur mit wesentlichen Inhaltsstoffen, gentechnikfrei und frei von unnötigen Füllstoffen.",
+                feat_4_title: "Entwickelt für langfristige, konsistente Anwendung",
+                feat_4_desc: "Ideal für diejenigen, die eine stetige, fortlaufende Unterstützung anstelle von kurzfristigen Lösungen schätzen.",
+                social_proof: "Tausende glückliche Kunden",
+                stock: "Auf Lager",
+                limited_deal: "Befristetes 75% Rabatt-Angebot endet bald",
+                select_title: "Wählen Sie Ihr Land, um das beste Leaf Lab-Angebot freizuschalten",
+                select_subtitle: "Erhalten Sie den niedrigsten Preis in Ihrer Region, Landeswährung und schnellsten Versandoptionen.<br>Klicken Sie auf Ihre Flagge, um Ihren exklusiven Deal zu sehen.",
+                footer_care_title: "KUNDENSERVICE",
+                footer_email: "Senden Sie uns eine E-Mail",
+                footer_chat: "24/7 Live-Chat",
+                cta_button: "JETZT RABATT SICHERN!",
+                cta_guarantee: "Probieren Sie es heute mit einer 30-Tage-Geld-zurück-Garantie!",
+                footer_text: "Leaf Lab bietet hochwertige CBD-Präparate mit 0% THC an, um Ihre tägliche Wellness-Reise zu unterstützen. Unser Engagement für Transparenz und einfache, natürliche Inhaltsstoffe stellt sicher, dass Sie die sanfte Unterstützung erhalten, die Ihr Körper benötigt."
+            },
+            it: {
+                top_bar: "OFFERTA SPECIALE A TEMPO LIMITATO | 75% DI SCONTO",
+                ratings: "Scelto da migliaia di persone | Una community in crescita",
+                main_title: "Supporto delicato e quotidiano per il tuo corpo",
+                subtitle: "<p class='font-bold mb-2 text-[#405436]'>0% THC. Ingredienti testati. Nessun additivo non necessario.</p>Leaf Lab è un integratore di CBD accuratamente formulato per supportare l'equilibrio naturale del tuo corpo e adattarsi perfettamente alla tua routine quotidiana: semplice, costante e responsabile.",
+                why_love: "PERCHÉ LE PERSONE SCELGONO LEAF LAB",
+                feat_1_title: "Ingredienti testati con 0% THC",
+                feat_1_desc: "Formulato con isolato di CBD derivato dalla canapa e nessun THC rilevabile, garantendo un prodotto pulito e controllato.",
+                feat_2_title: "Routine semplice, una volta al giorno",
+                feat_2_desc: "Solo una capsula al giorno: facile da integrare nella vita di tutti i giorni.",
+                feat_3_title: "Formula minimalista e pensata con cura",
+                feat_3_desc: "Realizzato solo con ingredienti essenziali, non OGM e privo di riempitivi non necessari.",
+                feat_4_title: "Progettato per un uso a lungo termine e costante",
+                feat_4_desc: "Ideale per chi apprezza un supporto costante e continuo piuttosto che soluzioni a breve termine.",
+                social_proof: "Migliaia di clienti felici",
+                stock: "Disponibile",
+                limited_deal: "Offerta limitata del 75% di sconto termina presto",
+                select_title: "Seleziona il tuo paese per sbloccare la migliore offerta Leaf Lab di oggi",
+                select_subtitle: "Ottieni il prezzo più basso disponibile nella tua regione, valuta locale e opzioni di spedizione più veloci.<br>Clicca sulla tua bandiera per vedere la tua offerta esclusiva.",
+                footer_care_title: "SERVIZIO CLIENTI",
+                footer_email: "Inviaci un'email",
+                footer_chat: "Chat dal vivo 24/7",
+                cta_button: "OTTIENI IL TUO SCONTO ORA!",
+                cta_guarantee: "Provalo oggi con una garanzia di rimborso di 30 giorni!",
+                footer_text: "Leaf Lab fornisce integratori di CBD di alta qualità con 0% THC per supportare il tuo percorso di benessere quotidiano. Il nostro impegno per la trasparenza e ingredienti semplici e naturali ti assicura di ottenere il supporto delicato di cui il tuo corpo ha bisogno."
+            },
+            sv: {
+                top_bar: "SÄRSKILT ERBJUDANDE | 75% RABATT",
+                ratings: "Betrodd av tusentals | En växande gemenskap",
+                main_title: "Skonsamt, dagligt stöd för din kropp",
+                subtitle: "<p class='font-bold mb-2 text-[#405436]'>0% THC. Testade ingredienser. Inga onödiga tillsatser.</p>Leaf Lab är ett noggrant formulerat CBD-tillskott utformat för att stödja kroppens naturliga balans och passa sömlöst in i din dagliga rutin – enkelt, konsekvent och ansvarsfullt.",
+                why_love: "VARFÖR MÄNNISKOR VÄLJER LEAF LAB",
+                feat_1_title: "Testade ingredienser med 0% THC",
+                feat_1_desc: "Formulerad med hampahärledd CBD-isolat och ingen detekterbar THC, vilket garanterar en ren och kontrollerad produkt.",
+                feat_2_title: "Enkel rutin en gång om dagen",
+                feat_2_desc: "Bara en kapsel om dagen – lätt att införliva i vardagen.",
+                feat_3_title: "Genomtänkt, minimalistisk formel",
+                feat_3_desc: "Tillverkad med endast nödvändiga ingredienser, icke-GMO och fri från onödiga fyllnadsmedel.",
+                feat_4_title: "Utformad för långvarig, konsekvent användning",
+                feat_4_desc: "Perfekt för dem som värdesätter stadigt, pågående stöd snarare än kortsiktiga lösningar.",
+                social_proof: "Tusentals nöjda kunder",
+                stock: "I lager",
+                limited_deal: "Begränsad 75% rabatt slutar snart",
+                select_title: "Välj ditt land för dagens bästa Leaf Lab-erbjudande",
+                select_subtitle: "Få det lägsta priset i din region, lokal valuta och snabbaste leveransalternativ.<br>Klicka på din flagga för att se ditt exklusiva erbjudande.",
+                footer_care_title: "KUNDTJÄNST",
+                footer_email: "Skicka ett mail",
+                footer_chat: "24/7 Livechatt",
+                cta_button: "FÅ DIN RABATT NU!",
+                cta_guarantee: "Prova det idag med 30 dagars pengarna-tillbaka-garanti!",
+                footer_text: "Leaf Lab tillhandahåller högkvalitativa CBD-tillskott med 0% THC för att stödja din dagliga hälsoresa. Vårt engagemang för transparens och enkla, naturliga ingredienser säkerställer att du får det skonsamma stöd din kropp behöver."
+            },
+            fi: {
+                top_bar: "ERIKOISTARJOUS | 75% ALENNUS",
+                ratings: "Tuhansien luottama | Kasvava yhteisö",
+                main_title: "Hellävarainen, päivittäinen tuki kehollesi",
+                subtitle: "<p class='font-bold mb-2 text-[#405436]'>0% THC. Testatut ainesosat. Ei turhia lisäaineita.</p>Leaf Lab on huolellisesti muotoiltu CBD-lisäravinne, joka on suunniteltu tukemaan kehosi luonnollista tasapainoa ja sopimaan saumattomasti päivittäiseen rutiiniisi – yksinkertainen, johdonmukainen ja vastuullinen.",
+                why_love: "MIKSI IHMISET VALITSEVAT LEAF LABIN",
+                feat_1_title: "Testatut ainesosat, joissa on 0% THC:tä",
+                feat_1_desc: "Muotoiltu hampusta johdetulla CBD-isolaatilla eikä havaittavaa THC:tä, varmistaen puhtaan ja hallitun tuotteen.",
+                feat_2_title: "Yksinkertainen rutiini kerran päivässä",
+                feat_2_desc: "Vain yksi kapseli päivässä – helppo sisällyttää jokapäiväiseen elämään.",
+                feat_3_title: "Harkittu, minimalistinen kaava",
+                feat_3_desc: "Valmistettu vain välttämättömistä ainesosista, ei-GMO ja vapaa turhista täyteaineista.",
+                feat_4_title: "Suunniteltu pitkäaikaiseen, johdonmukaiseen käyttöön",
+                feat_4_desc: "Ihanteellinen niille, jotka arvostavat tasaista, jatkuvaa tukea lyhytaikaisten ratkaisujen sijaan.",
+                social_proof: "Tuhansia tyytyväisiä asiakkaita",
+                stock: "Varastossa",
+                limited_deal: "Rajoitettu 75% alennus päättyy pian",
+                select_title: "Valitse maasi avataksesi päivän parhaan Leaf Lab -tarjouksen",
+                select_subtitle: "Saat halvimman hinnan alueellasi, paikallisen valuutan ja nopeimmat toimitukset.<br>Napsauta lippua nähdäksesi ainutlaatuisen tarjouksesi.",
+                footer_care_title: "ASIAKASPALVELU",
+                footer_email: "Lähetä sähköpostia",
+                footer_chat: "24/7 Live Chat",
+                cta_button: "SAAT ALENNUKSESI NYT!",
+                cta_guarantee: "Kokeile tänään 30 päivän rahat takaisin -takuulla!",
+                footer_text: "Leaf Lab tarjoaa korkealaatuisia 0% THC CBD -lisäravinteita tukemaan päivittäistä hyvinvointimatkaasi. Sitoutumisemme läpinäkyvyyteen ja yksinkertaisiin, luonnollisiin ainesosiin varmistaa, että saat kehon tarvitseman hellävaraisen tuen."
             }
         };
 
@@ -544,11 +651,30 @@
                 }
             });
 
-            const regionFlag = document.getElementById('dynamic-region-flag');
-            if (regionFlag) {
-                regionFlag.src = `https://flagcdn.com/w20/${countryCode}.png`;
-            }
+            // No main dynamic flag to update anymore, but we could highlight selected one if we wanted.
         }
+
+        // Auto-detect browser language on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const userLang = navigator.language || navigator.userLanguage; 
+            // Check for German
+            if (userLang.startsWith('de')) {
+                setLanguage('de', 'de');
+            } 
+            // Check for Italian
+            else if (userLang.startsWith('it')) {
+                setLanguage('it', 'it');
+            }
+            // Check for Swedish
+            else if (userLang.startsWith('sv')) {
+                setLanguage('sv', 'se');
+            }
+            // Check for Finnish
+            else if (userLang.startsWith('fi')) {
+                setLanguage('fi', 'fi');
+            }
+            // Default is already English in HTML, so no else needed
+        });
 
         // Custom Toast Notification instead of alert
         function showToast(message, type = 'default') {
