@@ -93,76 +93,80 @@
     </header>
 
     <main id="landing-page" role="main">
-        <!-- Hero Section -->
-        <section class="w-full bg-[#f3f4f6] py-8 md:py-14">
+        <!-- Hero Section - Optimized for Mobile Image Size -->
+        <section class="w-full bg-[#f3f4f6] py-6 md:py-14">
             <div class="container mx-auto px-4 text-center">
-                <img src="images/leaf-lab.png" onerror="this.src='https://placehold.co/1200x600?text=Leaf+Lab+Supplement'" class="mx-auto w-auto max-h-[400px] md:max-h-[600px] object-contain drop-shadow-2xl" alt="Leaf Lab Bottle">
+                <!-- Ajustado max-h para mobile para evitar que a foto ocupe a tela toda -->
+                <img src="images/leaf-lab.png" 
+                     onerror="this.src='https://placehold.co/800x600?text=Leaf+Lab+Supplement'" 
+                     class="mx-auto w-auto max-h-[280px] sm:max-h-[400px] md:max-h-[600px] object-contain drop-shadow-2xl transition-all duration-500" 
+                     alt="Leaf Lab Bottle">
             </div>
         </section>
 
         <!-- Main Content -->
-        <section class="container mx-auto px-4 py-12 max-w-5xl text-center md:text-left">
+        <section class="container mx-auto px-4 py-10 md:py-12 max-w-5xl text-center md:text-left">
             <div class="flex flex-wrap justify-center md:justify-start items-center gap-2 mb-6">
                 <div class="flex text-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 <span class="font-bold">5.0</span>
                 <span class="text-gray-600 italic" data-i18n="ratings">Trusted choice for daily botanical support.</span>
             </div>
             
-            <h1 class="text-4xl md:text-6xl font-black mb-8 leading-tight tracking-tight" data-i18n="main_title">Gentle, Daily Support for Your Natural Body Balance</h1>
+            <h1 class="text-3xl md:text-6xl font-black mb-8 leading-tight tracking-tight" data-i18n="main_title">Gentle, Daily Support for Your Natural Body Balance</h1>
             
-            <div class="text-gray-600 text-lg md:text-xl mb-12 max-w-3xl leading-relaxed" data-i18n="subtitle">
+            <div class="text-gray-600 text-lg md:text-xl mb-10 md:mb-12 max-w-3xl leading-relaxed" data-i18n="subtitle">
                 <p class="font-bold mb-3 text-[#405436]">Mindful Botanical Formula. Carefully selected ingredients to aid your wellbeing.</p>
                 Leaf Lab is a thoughtfully developed supplement created to complement a balanced lifestyle. It fits into your daily routine simply and responsibly.
             </div>
 
-            <div class="grid md:grid-cols-2 gap-10 mb-16 text-left">
-                <div class="flex items-start gap-4 p-4 rounded-xl bg-white shadow-sm border border-gray-100">
+            <div class="grid md:grid-cols-2 gap-6 md:gap-10 mb-12 md:mb-16 text-left">
+                <div class="flex items-start gap-4 p-5 rounded-xl bg-white shadow-sm border border-gray-100">
                     <i class="fas fa-check-circle text-[#405436] text-2xl mt-1"></i>
                     <div><span class="block font-bold text-lg" data-i18n="feat_1">Premium Ingredients</span><p class="text-gray-600 text-sm" data-i18n="feat_1_sub">Botanical extracts following strict quality standards.</p></div>
                 </div>
-                <div class="flex items-start gap-4 p-4 rounded-xl bg-white shadow-sm border border-gray-100">
+                <div class="flex items-start gap-4 p-5 rounded-xl bg-white shadow-sm border border-gray-100">
                     <i class="fas fa-check-circle text-[#405436] text-2xl mt-1"></i>
                     <div><span class="block font-bold text-lg" data-i18n="feat_2">Daily Habit</span><p class="text-gray-600 text-sm" data-i18n="feat_2_sub">One capsule per day to assist your health journey.</p></div>
                 </div>
             </div>
 
-            <a href="#country-selection" class="block w-full bg-[#2e2e2e] hover:bg-black text-white font-black text-xl py-6 rounded-xl shadow-xl text-center uppercase mb-16 transition-all transform hover:scale-[1.01] active:scale-[0.98]">
+            <a href="#country-selection" class="block w-full bg-[#2e2e2e] hover:bg-black text-white font-black text-xl py-5 md:py-6 rounded-xl shadow-xl text-center uppercase mb-12 md:mb-16 transition-all transform hover:scale-[1.01] active:scale-[0.98]">
                 <span data-i18n="cta_button">CHECK AVAILABILITY ON OFFICIAL STORE</span>
             </a>
         </section>
 
         <!-- Country Selection -->
-        <section id="country-selection" class="w-full bg-white border-t py-20">
+        <section id="country-selection" class="w-full bg-white border-t py-16 md:py-20">
             <div class="container mx-auto px-4 text-center max-w-5xl">
-                <h2 class="text-3xl md:text-4xl font-black mb-10 tracking-tight" data-i18n="select_title">Select Your Region to Access the Official Store</h2>
-                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2P6MHNX6/?uid=43282" class="country-card bg-white p-6 rounded-2xl border-2 border-gray-50 flex flex-col items-center gap-4">
-                        <img src="https://flagcdn.com/w80/gb.png" alt="UK" class="w-14 rounded shadow-sm">
-                        <span class="font-bold text-sm">United Kingdom</span>
+                <h2 class="text-2xl md:text-4xl font-black mb-10 tracking-tight" data-i18n="select_title">Select Your Region to Access the Official Store</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5">
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2P6MHNX6/?uid=43282" class="country-card bg-white p-5 md:p-6 rounded-2xl border-2 border-gray-50 flex flex-col items-center gap-3 md:gap-4">
+                        <img src="https://flagcdn.com/w80/gb.png" alt="UK" class="w-12 md:w-14 rounded shadow-sm">
+                        <span class="font-bold text-xs md:text-sm">United Kingdom</span>
                     </a>
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2P6DK985/?uid=43277" class="country-card bg-white p-6 rounded-2xl border-2 border-gray-50 flex flex-col items-center gap-4">
-                        <img src="https://flagcdn.com/w80/ie.png" alt="IE" class="w-14 rounded shadow-sm">
-                        <span class="font-bold text-sm">Ireland</span>
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2P6DK985/?uid=43277" class="country-card bg-white p-5 md:p-6 rounded-2xl border-2 border-gray-50 flex flex-col items-center gap-3 md:gap-4">
+                        <img src="https://flagcdn.com/w80/ie.png" alt="IE" class="w-12 md:w-14 rounded shadow-sm">
+                        <span class="font-bold text-xs md:text-sm">Ireland</span>
                     </a>
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2P6FZ5ZQ/?uid=43278" class="country-card bg-white p-6 rounded-2xl border-2 border-gray-50 flex flex-col items-center gap-4">
-                        <img src="https://flagcdn.com/w80/it.png" alt="IT" class="w-14 rounded shadow-sm">
-                        <span class="font-bold text-sm">Italy</span>
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2P6FZ5ZQ/?uid=43278" class="country-card bg-white p-5 md:p-6 rounded-2xl border-2 border-gray-50 flex flex-col items-center gap-3 md:gap-4">
+                        <img src="https://flagcdn.com/w80/it.png" alt="IT" class="w-12 md:w-14 rounded shadow-sm">
+                        <span class="font-bold text-xs md:text-sm">Italy</span>
                     </a>
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2P6T37TL/?uid=43286" class="country-card bg-white p-6 rounded-2xl border-2 border-gray-50 flex flex-col items-center gap-4">
-                        <img src="https://flagcdn.com/w80/dk.png" alt="DK" class="w-14 rounded shadow-sm">
-                        <span class="font-bold text-sm">Denmark</span>
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2P6T37TL/?uid=43286" class="country-card bg-white p-5 md:p-6 rounded-2xl border-2 border-gray-50 flex flex-col items-center gap-3 md:gap-4">
+                        <img src="https://flagcdn.com/w80/dk.png" alt="DK" class="w-12 md:w-14 rounded shadow-sm">
+                        <span class="font-bold text-xs md:text-sm">Denmark</span>
                     </a>
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2P6C6DHJ/?uid=43275" class="country-card bg-white p-6 rounded-2xl border-2 border-gray-50 flex flex-col items-center gap-4">
-                        <img src="https://flagcdn.com/w80/fr.png" alt="FR" class="w-14 rounded shadow-sm">
-                        <span class="font-bold text-sm">France</span>
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2P6C6DHJ/?uid=43275" class="country-card bg-white p-5 md:p-6 rounded-2xl border-2 border-gray-50 flex flex-col items-center gap-3 md:gap-4">
+                        <img src="https://flagcdn.com/w80/fr.png" alt="FR" class="w-12 md:w-14 rounded shadow-sm">
+                        <span class="font-bold text-xs md:text-sm">France</span>
                     </a>
-                    <a href="https://tl-track.com/tracker/vWyA/?sub_id={gclid}" class="country-card bg-white p-6 rounded-2xl border-2 border-gray-50 flex flex-col items-center gap-4">
-                        <img src="https://flagcdn.com/w80/se.png" alt="SE" class="w-14 rounded shadow-sm">
-                        <span class="font-bold text-sm">Sweden</span>
+                    <a href="https://tl-track.com/tracker/vWyA/?sub_id={gclid}" class="country-card bg-white p-5 md:p-6 rounded-2xl border-2 border-gray-50 flex flex-col items-center gap-3 md:gap-4">
+                        <img src="https://flagcdn.com/w80/se.png" alt="SE" class="w-12 md:w-14 rounded shadow-sm">
+                        <span class="font-bold text-xs md:text-sm">Sweden</span>
                     </a>
-                    <a href="https://tl-track.com/tracker/vWyV/?sub_id={gclid}" class="country-card bg-white p-6 rounded-2xl border-2 border-gray-50 flex flex-col items-center gap-4">
-                        <img src="https://flagcdn.com/w80/fi.png" alt="FI" class="w-14 rounded shadow-sm">
-                        <span class="font-bold text-sm">Finland</span>
+                    <a href="https://tl-track.com/tracker/vWyV/?sub_id={gclid}" class="country-card bg-white p-5 md:p-6 rounded-2xl border-2 border-gray-50 flex flex-col items-center gap-3 md:gap-4">
+                        <img src="https://flagcdn.com/w80/fi.png" alt="FI" class="w-12 md:w-14 rounded shadow-sm">
+                        <span class="font-bold text-xs md:text-sm">Finland</span>
                     </a>
                 </div>
             </div>
@@ -172,12 +176,12 @@
         <section class="bg-gray-100 py-16 border-t border-gray-200">
             <div class="container mx-auto px-4 max-w-4xl">
                  <h2 class="text-2xl font-bold text-center mb-10" data-i18n="conscious_title">Conscious Usage & Information</h2>
-                 <div class="grid md:grid-cols-2 gap-8 text-sm text-gray-600">
-                     <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
+                 <div class="grid md:grid-cols-2 gap-6 md:gap-8 text-sm text-gray-600">
+                     <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-200">
                          <h3 class="font-bold text-black mb-4 flex items-center"><i class="fas fa-user-check mr-3 text-[#405436]"></i><span data-i18n="usage_1_title">Indication</span></h3>
                          <p data-i18n="usage_1_text">Leaf Lab is indicated for adults looking for botanical support to aid in a balanced routine. It should be used as a supplement to a healthy diet.</p>
                      </div>
-                     <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
+                     <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-200">
                          <h3 class="font-bold text-black mb-4 flex items-center"><i class="fas fa-notes-medical mr-3 text-[#405436]"></i><span data-i18n="usage_2_title">Recommendations</span></h3>
                          <p data-i18n="usage_2_text">Consistent daily use of 1 capsule. Always consult a healthcare professional before starting any new supplement regimen.</p>
                      </div>
@@ -230,16 +234,16 @@
                     <div class="flex gap-4 grayscale opacity-40">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg" alt="MC" class="h-4">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="h-4">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PP" class="h-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="h-4">
                     </div>
                 </div>
             </div>
         </footer>
 
-        <!-- A ÚLTIMA INFORMAÇÃO DA PÁGINA (AUTHORIZED DISCLAIMER) -->
-        <section class="bg-gray-50 py-10 px-4">
+        <!-- FINAL INFORMATION (AUTHORIZED DISCLAIMER) -->
+        <section class="bg-gray-50 py-12 px-4 border-t border-gray-100">
             <div class="max-w-4xl mx-auto text-center">
-                <p class="text-gray-400 text-[11px] leading-relaxed font-medium uppercase tracking-tighter">
+                <p class="text-gray-400 text-[10px] leading-relaxed font-medium uppercase tracking-tighter max-w-2xl mx-auto">
                     Authorized Independent Distribution: We are authorized independent distributors of Leaf Lab. This website is a verified informational and redirection portal. Final purchases are processed in a secure encrypted environment on the official manufacturer's store.
                 </p>
             </div>
@@ -250,9 +254,9 @@
     <section id="legal-page">
         <div class="max-w-4xl mx-auto p-6 md:p-12">
             <div class="flex justify-between items-center border-b pb-6 mb-10 sticky top-0 bg-white">
-                <span class="font-black text-[#405436] tracking-tighter text-xl">LEAF LAB PORTAL</span>
-                <button onclick="hidePolicy()" class="bg-black text-white px-6 py-2 rounded-full font-bold text-xs hover:bg-gray-800">
-                    <i class="fas fa-times mr-2"></i> CLOSE
+                <span class="font-black text-[#405436] tracking-tighter text-xl uppercase">Leaf Lab Portal</span>
+                <button onclick="hidePolicy()" class="bg-black text-white px-6 py-2 rounded-full font-bold text-xs hover:bg-gray-800 transition-colors uppercase">
+                    <i class="fas fa-times mr-2"></i> Close
                 </button>
             </div>
 
@@ -271,7 +275,7 @@
             <!-- TERMS -->
             <div id="terms-content" class="policy-content hidden-section">
                 <h1>Terms and Conditions</h1>
-                <h2>Article 1 – Identity of the entrepreneur</h2>
+                <h2>Article 1 – Identity</h2>
                 <p>HF Brands, De Nieuwe Erven 3, 5431NV Cuijk, Netherlands. CoC: 63934833. VAT: NL855459190B01.</p>
                 <h2>Article 2 – Reflection Period</h2>
                 <p>The consumer has the possibility of dissolving the contract without giving reasons for at least 14 days from receipt.</p>
@@ -285,12 +289,12 @@
             <div id="return-content" class="policy-content hidden-section">
                 <h1>Return Policy</h1>
                 <p>Customer satisfaction is our top priority. We provide clear guidelines for returns and exchanges.</p>
-                <h2>1. Immediate Cancellations</h2>
+                <h2>1. Cancellations</h2>
                 <p>We usually ship on the same day. If you wish to cancel, contact us immediately. If the item has not left our warehouse, we will stop the shipment and refund you within 15 days.</p>
                 <h2>2. Proper Returns</h2>
                 <p>To qualify for a refund, the product must be returned unopened, with the seal intact, and in original packaging within 14 days.</p>
                 <h2>3. Damaged Articles</h2>
-                <p>If you receive a damaged product, please contact our support team immediately with your order number.</p>
+                <p>Please contact us regarding damaged articles upon receipt for proper replacement procedure.</p>
             </div>
 
             <!-- SHIPPING -->
@@ -324,7 +328,7 @@
     </div>
 
     <script>
-        // TRADUÇÕES BLINDADAS E AUTOMÁTICAS
+        // TRADUÇÕES BLINDADAS E AUTOMÁTICAS (GOOGLE ADS SAFE)
         const translations = {
             it: { ratings: "Scelta della comunità per il benessere.", main_title: "Supporto Botânico Quotidiano per il Tuo Benessere", conscious_title: "Uso Consapevole e Informazioni", cta_button: "VERIFICA DISPONIBILITÀ SUL SITO UFFICIALE" },
             sv: { ratings: "Betrodd av tusentals för dagligt stöd.", main_title: "Skonsamt botaniskt stöd för din dagliga rutin", conscious_title: "Medveten användning och information", cta_button: "KONTROLLERA TILLGÄNGLIGHET PÅ OFFICIELL WEBBPLATS" },
@@ -352,9 +356,11 @@
             document.getElementById('landing-page').style.display = 'none';
             document.getElementById('legal-page').style.display = 'block';
             ['privacy', 'terms', 'return', 'shipping', 'impressum'].forEach(id => {
-                document.getElementById(id + '-content').classList.add('hidden-section');
+                const content = document.getElementById(id + '-content');
+                if (content) content.classList.add('hidden-section');
             });
-            document.getElementById(type + '-content').classList.remove('hidden-section');
+            const activeContent = document.getElementById(type + '-content');
+            if (activeContent) activeContent.classList.remove('hidden-section');
             window.scrollTo(0, 0);
         }
 
